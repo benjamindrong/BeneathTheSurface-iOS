@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		BC133B502DAD87A900D1A287 /* BeneathTheSurfaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC133B4F2DAD87A900D1A287 /* BeneathTheSurfaceApp.swift */; };
-		BC133B522DAD87A900D1A287 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC133B512DAD87A900D1A287 /* ContentView.swift */; };
 		BC133B542DAD87AB00D1A287 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC133B532DAD87AB00D1A287 /* Assets.xcassets */; };
 		BC133B572DAD87AB00D1A287 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC133B562DAD87AB00D1A287 /* Preview Assets.xcassets */; };
 		BC133B612DAD87AB00D1A287 /* BeneathTheSurfaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC133B602DAD87AB00D1A287 /* BeneathTheSurfaceTests.swift */; };
 		BC133B6B2DAD87AB00D1A287 /* BeneathTheSurfaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC133B6A2DAD87AB00D1A287 /* BeneathTheSurfaceUITests.swift */; };
 		BC133B6D2DAD87AB00D1A287 /* BeneathTheSurfaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC133B6C2DAD87AB00D1A287 /* BeneathTheSurfaceUITestsLaunchTests.swift */; };
+		BC44D3DD2DAEB13300FADDE9 /* ExpandableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44D3DC2DAEB13300FADDE9 /* ExpandableItem.swift */; };
+		BC44D3DF2DAEB16F00FADDE9 /* ExpandableListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44D3DE2DAEB16F00FADDE9 /* ExpandableListViewModel.swift */; };
+		BC44D3E12DAEB19000FADDE9 /* ExpandableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44D3E02DAEB19000FADDE9 /* ExpandableCardView.swift */; };
+		BC44D3E32DAEB1BE00FADDE9 /* ExpandableListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44D3E22DAEB1BE00FADDE9 /* ExpandableListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		BC133B4C2DAD87A900D1A287 /* BeneathTheSurface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeneathTheSurface.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC133B4F2DAD87A900D1A287 /* BeneathTheSurfaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeneathTheSurfaceApp.swift; sourceTree = "<group>"; };
-		BC133B512DAD87A900D1A287 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BC133B532DAD87AB00D1A287 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC133B562DAD87AB00D1A287 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC133B5C2DAD87AB00D1A287 /* BeneathTheSurfaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeneathTheSurfaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,10 @@
 		BC133B662DAD87AB00D1A287 /* BeneathTheSurfaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeneathTheSurfaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC133B6A2DAD87AB00D1A287 /* BeneathTheSurfaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeneathTheSurfaceUITests.swift; sourceTree = "<group>"; };
 		BC133B6C2DAD87AB00D1A287 /* BeneathTheSurfaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeneathTheSurfaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BC44D3DC2DAEB13300FADDE9 /* ExpandableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableItem.swift; sourceTree = "<group>"; };
+		BC44D3DE2DAEB16F00FADDE9 /* ExpandableListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableListViewModel.swift; sourceTree = "<group>"; };
+		BC44D3E02DAEB19000FADDE9 /* ExpandableCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableCardView.swift; sourceTree = "<group>"; };
+		BC44D3E22DAEB1BE00FADDE9 /* ExpandableListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +100,10 @@
 		BC133B4E2DAD87A900D1A287 /* BeneathTheSurface */ = {
 			isa = PBXGroup;
 			children = (
+				BC44D3DB2DAEB0FA00FADDE9 /* Views */,
+				BC44D3DA2DAEB0F300FADDE9 /* ViewModels */,
+				BC44D3D92DAEB0EA00FADDE9 /* Models */,
 				BC133B4F2DAD87A900D1A287 /* BeneathTheSurfaceApp.swift */,
-				BC133B512DAD87A900D1A287 /* ContentView.swift */,
 				BC133B532DAD87AB00D1A287 /* Assets.xcassets */,
 				BC133B552DAD87AB00D1A287 /* Preview Content */,
 			);
@@ -125,6 +133,31 @@
 				BC133B6C2DAD87AB00D1A287 /* BeneathTheSurfaceUITestsLaunchTests.swift */,
 			);
 			path = BeneathTheSurfaceUITests;
+			sourceTree = "<group>";
+		};
+		BC44D3D92DAEB0EA00FADDE9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC44D3DC2DAEB13300FADDE9 /* ExpandableItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC44D3DA2DAEB0F300FADDE9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BC44D3DE2DAEB16F00FADDE9 /* ExpandableListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BC44D3DB2DAEB0FA00FADDE9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BC44D3E02DAEB19000FADDE9 /* ExpandableCardView.swift */,
+				BC44D3E22DAEB1BE00FADDE9 /* ExpandableListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC133B522DAD87A900D1A287 /* ContentView.swift in Sources */,
+				BC44D3E12DAEB19000FADDE9 /* ExpandableCardView.swift in Sources */,
+				BC44D3DF2DAEB16F00FADDE9 /* ExpandableListViewModel.swift in Sources */,
+				BC44D3DD2DAEB13300FADDE9 /* ExpandableItem.swift in Sources */,
+				BC44D3E32DAEB1BE00FADDE9 /* ExpandableListView.swift in Sources */,
 				BC133B502DAD87A900D1A287 /* BeneathTheSurfaceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
