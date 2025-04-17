@@ -16,10 +16,20 @@ struct ExpandableListView: View {
                 ForEach(viewModel.items) { item in
                     ExpandableCardView(item: item) {
                         viewModel.toggleItem(item)
+                    } onImageTapped: { url in
+                        viewModel.selectedImageURL = url
+                        viewModel.isShowingFullImage = true
                     }
                 }
             }
             .padding(.horizontal)
+        }
+        .fullScreenCover(isPresented: $viewModel.isShowingFullImage) {
+            if let imageUrl = viewModel.selectedImageURL {
+                FullScreenImageView(imageUrl: imageUrl) {
+                    viewModel.isShowingFullImage = false
+                }
+            }
         }
 
     }

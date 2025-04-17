@@ -8,11 +8,47 @@
 import SwiftUI
 
 struct FullScreenImageView: View {
+    let imageUrl: URL
+    let onDismiss: () -> Void
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color.black.ignoresSafeArea()
+
+            AsyncImage(url: imageUrl) { phase in
+                switch phase {
+                case .empty:
+                    ProgressView()
+                        .scaleEffect(1.5)
+                        .foregroundColor(.white)
+
+                case .success(let image):
+                    image
+                        .resizable()
+                        .scaledToFit()
+
+                case .failure:
+                    Image(systemName: "photo.fill")
+                        .foregroundColor(.gray)
+
+                @unknown default:
+                    EmptyView()
+                }
+            }
+
+            VStack {
+                HStack {
+                    Spacer()
+                    Button(action: onDismiss) {
+                        Image(systemName: "xmark.circle.fill")
+                            .font(.system(size: 30))
+                            .foregroundColor(.white)
+                            .padding()
+                    }
+                }
+                Spacer()
+            }
+        }
     }
 }
 
-#Preview {
-    FullScreenImageView()
-}
