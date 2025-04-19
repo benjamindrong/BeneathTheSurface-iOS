@@ -13,7 +13,6 @@ struct ExpandableCardView: View {
     var onImageTapped: (URL) -> Void
     @State private var selectedPage = 0
     @State private var isShowingFullImage = false
-    @StateObject private var viewModel = ExpandableListViewModel()
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -28,7 +27,6 @@ struct ExpandableCardView: View {
             .contentShape(Rectangle())
             .onTapGesture {
                 withAnimation {
-                    print("Tapped card titled: \(item.title)")
                     onToggle()
                 }
             }
@@ -57,7 +55,6 @@ struct ExpandableCardView: View {
                                                 .onTapGesture {
                                                     if let original = page.originalImage?.source,
                                                            let url = URL(string: original) {
-                                                            print("Tapped image: \(url)")
                                                             onImageTapped(url)
                                                         }
                                                 }
@@ -78,7 +75,6 @@ struct ExpandableCardView: View {
                 .tabViewStyle(.page(indexDisplayMode: .never))
                 .frame(height: 300)
 
-
                 // Page indicator
                 HStack {
                     Spacer()
@@ -93,13 +89,5 @@ struct ExpandableCardView: View {
         .background(Color(.secondarySystemBackground))
         .cornerRadius(10)
         .shadow(radius: 2)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .fullScreenCover(isPresented: $viewModel.isShowingFullImage) {
-            if let imageUrl = viewModel.selectedImageURL {
-                FullScreenImageView(imageUrl: imageUrl) {
-                    viewModel.isShowingFullImage = false
-                }
-            }
-        }
     }
 }

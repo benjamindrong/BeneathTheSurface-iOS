@@ -12,7 +12,10 @@ struct ExpandableListView: View {
 
     var body: some View {
         ScrollView {
-            LazyVStack(spacing: 12) {
+            VStack(spacing: 12) {
+                OnThisDayFormView { day, month in
+                    viewModel.loadOnThisDayData(month: month, day: day)
+                }
                 ForEach(viewModel.items) { item in
                     ExpandableCardView(item: item) {
                         viewModel.toggleItem(item)

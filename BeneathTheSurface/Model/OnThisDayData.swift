@@ -15,6 +15,16 @@ struct OnThisDayData: Codable {
 
     static let getRoute = "/onThisDay"
     static let fullUrl = "https://en.wikipedia.org/api/rest_v1/feed/onthisday/selected"
+    
+    // Function to map OnThisDayData to ExpandableItems
+    func toExpandableItems() -> [ExpandableItem] {
+        return selected.map { selected in
+            ExpandableItem(
+                title: "\(selected.year ?? 0): \(selected.text)", // Set the title as "year: text"
+                pages: selected.pages
+            )
+        }
+    }
 }
 
 struct OnThisDayRequest {
@@ -111,4 +121,3 @@ struct Coordinates: Codable {
     let lat: Double?
     let lon: Double?
 }
-
