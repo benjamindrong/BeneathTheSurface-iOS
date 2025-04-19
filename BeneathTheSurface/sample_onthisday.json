@@ -1,0 +1,1874 @@
+{
+  "selected": [
+    {
+      "text": "The ferry MV Sewol (pictured) capsized and sank off Donggeochado, South Korea, killing 306 people, mainly students from Danwon High School.",
+      "pages": [
+        {
+          "type": "standard",
+          "title": "MV_Sewol",
+          "displaytitle": "MV <i>Sewol</i>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q30922319",
+          "titles": {
+            "canonical": "MV_Sewol",
+            "normalized": "MV Sewol",
+            "display": "MV <i>Sewol</i>"
+          },
+          "pageid": 42559555,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Ferry_Sewol_1.jpg/330px-Ferry_Sewol_1.jpg",
+            "width": 320,
+            "height": 213
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Ferry_Sewol_1.jpg",
+            "width": 900,
+            "height": 600
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1285959025",
+          "tid": "2d776309-1b07-11f0-a958-c8e0e1de3657",
+          "timestamp": "2025-04-16T21:10:09Z",
+          "description": "South Korean ferry",
+          "description_source": "local",
+          "coordinates": {
+            "lat": 34.75861111,
+            "lon": 126.35083333
+          },
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/MV_Sewol",
+              "revisions": "https://en.wikipedia.org/wiki/MV_Sewol?action=history",
+              "edit": "https://en.wikipedia.org/wiki/MV_Sewol?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:MV_Sewol"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/MV_Sewol",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/MV_Sewol",
+              "edit": "https://en.m.wikipedia.org/wiki/MV_Sewol?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:MV_Sewol"
+            }
+          },
+          "extract": "MV Sewol was a South Korean vehicle-passenger ferry, built and previously operated in Japan. She operated between Incheon and Jeju. On 16 April 2014, Sewol capsized and sank with the loss of 304 passengers and crew.",
+          "extract_html": "<p><b>MV <i>Sewol</i></b> was a South Korean vehicle-passenger ferry, built and previously operated in Japan. She operated between Incheon and Jeju. On 16 April 2014, <span><i>Sewol</i> capsized and sank</span> with the loss of 304 passengers and crew.</p>",
+          "normalizedtitle": "MV Sewol"
+        },
+        {
+          "type": "standard",
+          "title": "Sinking_of_MV_Sewol",
+          "displaytitle": "Sinking of MV <i>Sewol</i>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q16338015",
+          "titles": {
+            "canonical": "Sinking_of_MV_Sewol",
+            "normalized": "Sinking of MV Sewol",
+            "display": "Sinking of MV <i>Sewol</i>"
+          },
+          "pageid": 42503144,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Korean_Ferry_Sewol_Capsized%2C_2014.jpg/330px-Korean_Ferry_Sewol_Capsized%2C_2014.jpg",
+            "width": 320,
+            "height": 239
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/en/b/b2/Korean_Ferry_Sewol_Capsized%2C_2014.jpg",
+            "width": 365,
+            "height": 273
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1282882402",
+          "tid": "3c34d5a6-0c5f-11f0-9aef-bca2346ea8b3",
+          "timestamp": "2025-03-29T05:32:42Z",
+          "description": "2014 ferry sinking disaster in South Korea",
+          "description_source": "local",
+          "coordinates": {
+            "lat": 34.21805556,
+            "lon": 125.95
+          },
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Sinking_of_MV_Sewol",
+              "revisions": "https://en.wikipedia.org/wiki/Sinking_of_MV_Sewol?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Sinking_of_MV_Sewol?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Sinking_of_MV_Sewol"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Sinking_of_MV_Sewol",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Sinking_of_MV_Sewol",
+              "edit": "https://en.m.wikipedia.org/wiki/Sinking_of_MV_Sewol?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Sinking_of_MV_Sewol"
+            }
+          },
+          "extract": "On the morning of 16 April 2014, the ferry MV Sewol sank while en route from Incheon towards Jeju City in South Korea. The 6,825-ton vessel sent a distress signal from about 2.7 kilometres north of Byeongpungdo at 08:58 KST. Out of 476 passengers and crew, 304 died in the disaster, including around 250 students from Danwon High School in Ansan. Around 82% of the Sewol's casualties were children and out of the 172 survivors, more than half were rescued by fishing boats and other commercial vessels that arrived at the scene approximately 40 minutes before the Korea Coast Guard (KCG).",
+          "extract_html": "<p>On the morning of 16 April 2014, the ferry <span>MV <i>Sewol</i></span> sank while en route from Incheon towards Jeju City in South Korea. The 6,825-ton vessel sent a distress signal from about 2.7 kilometres north of Byeongpungdo at 08:58 KST. Out of 476 passengers and crew, 304 died in the disaster, including around 250 students from Danwon High School in Ansan. Around 82% of the <i>Sewol'</i>s casualties were children and out of the 172 survivors, more than half were rescued by fishing boats and other commercial vessels that arrived at the scene approximately 40 minutes before the Korea Coast Guard (KCG).</p>",
+          "normalizedtitle": "Sinking of MV Sewol"
+        },
+        {
+          "type": "standard",
+          "title": "Geochagundo",
+          "displaytitle": "<span class=\"mw-page-title-main\">Geochagundo</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q16179843",
+          "titles": {
+            "canonical": "Geochagundo",
+            "normalized": "Geochagundo",
+            "display": "<span class=\"mw-page-title-main\">Geochagundo</span>"
+          },
+          "pageid": 43040411,
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1285961416",
+          "tid": "17b75e52-1b0a-11f0-a7b2-c5e7e887e9d6",
+          "timestamp": "2025-04-16T21:31:01Z",
+          "description": "Archipelago in South Korea",
+          "description_source": "local",
+          "coordinates": {
+            "lat": 34.25,
+            "lon": 125.925
+          },
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Geochagundo",
+              "revisions": "https://en.wikipedia.org/wiki/Geochagundo?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Geochagundo?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Geochagundo"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Geochagundo",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Geochagundo",
+              "edit": "https://en.m.wikipedia.org/wiki/Geochagundo?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Geochagundo"
+            }
+          },
+          "extract": "Geochagundo (Korean: 거차군도) is an archipelago in the Yellow Sea, located about 30 km (19 mi) south-west of Jindo, in the administrative divisions of Donggeochado-ri and Seogeochado-ri, Jodo-myeon, Jindo County, South Jeolla Province.",
+          "extract_html": "<p><b>Geochagundo</b> (Korean: 거차군도) is an archipelago in the Yellow Sea, located about 30 km (19 mi) south-west of Jindo, in the administrative divisions of Donggeochado-ri and Seogeochado-ri, Jodo-myeon, Jindo County, South Jeolla Province.</p>",
+          "normalizedtitle": "Geochagundo"
+        },
+        {
+          "type": "standard",
+          "title": "Danwon_High_School",
+          "displaytitle": "<span class=\"mw-page-title-main\">Danwon High School</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q12590984",
+          "titles": {
+            "canonical": "Danwon_High_School",
+            "normalized": "Danwon High School",
+            "display": "<span class=\"mw-page-title-main\">Danwon High School</span>"
+          },
+          "pageid": 42512239,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Ansan_Danwon_High_School.jpg/320px-Ansan_Danwon_High_School.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/5/56/Ansan_Danwon_High_School.jpg",
+            "width": 2000,
+            "height": 1125
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1279733512",
+          "tid": "211c2a80-fd7d-11ef-b1b6-db90950c3cb1",
+          "timestamp": "2025-03-10T06:58:54Z",
+          "description": "High school in Danwon District, Ansan, South Korea",
+          "description_source": "local",
+          "coordinates": {
+            "lat": 37.3275,
+            "lon": 126.82416667
+          },
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Danwon_High_School",
+              "revisions": "https://en.wikipedia.org/wiki/Danwon_High_School?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Danwon_High_School?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Danwon_High_School"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Danwon_High_School",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Danwon_High_School",
+              "edit": "https://en.m.wikipedia.org/wiki/Danwon_High_School?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Danwon_High_School"
+            }
+          },
+          "extract": "Danwon High School is a coeducational high school located in Danwon District, Ansan, South Korea. It is a state school, being under the authority of Gyeonggi Province's Office of Education.",
+          "extract_html": "<p><b>Danwon High School</b> is a coeducational high school located in Danwon District, Ansan, South Korea. It is a state school, being under the authority of Gyeonggi Province's Office of Education.</p>",
+          "normalizedtitle": "Danwon High School"
+        }
+      ],
+      "year": 2014
+    },
+    {
+      "text": "In one of the deadliest shooting incidents in United States history, a gunman killed 32 people and wounded over 20 more before committing suicide at the Virginia Polytechnic Institute and State University in Blacksburg, Virginia (memorial pictured).",
+      "pages": [
+        {
+          "type": "standard",
+          "title": "Virginia_Tech_shooting",
+          "displaytitle": "<span class=\"mw-page-title-main\">Virginia Tech shooting</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q188799",
+          "titles": {
+            "canonical": "Virginia_Tech_shooting",
+            "normalized": "Virginia Tech shooting",
+            "display": "<span class=\"mw-page-title-main\">Virginia Tech shooting</span>"
+          },
+          "pageid": 10705678,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Virginia_Tech_massacre_candlelight_vigil_Burruss.jpg/330px-Virginia_Tech_massacre_candlelight_vigil_Burruss.jpg",
+            "width": 320,
+            "height": 412
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Virginia_Tech_massacre_candlelight_vigil_Burruss.jpg",
+            "width": 2099,
+            "height": 2700
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1285945361",
+          "tid": "e766d98f-1af7-11f0-b177-0ede8ee41437",
+          "timestamp": "2025-04-16T19:20:49Z",
+          "description": "2007 mass shooting in Blacksburg, Virginia, US",
+          "description_source": "local",
+          "coordinates": {
+            "lat": 37.227,
+            "lon": -80.422
+          },
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Virginia_Tech_shooting",
+              "revisions": "https://en.wikipedia.org/wiki/Virginia_Tech_shooting?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Virginia_Tech_shooting?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Virginia_Tech_shooting"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Virginia_Tech_shooting",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Virginia_Tech_shooting",
+              "edit": "https://en.m.wikipedia.org/wiki/Virginia_Tech_shooting?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Virginia_Tech_shooting"
+            }
+          },
+          "extract": "The Virginia Tech shooting was a spree shooting that occurred on Monday, April 16, 2007, comprising two attacks on the campus of the Virginia Polytechnic Institute and State University in Blacksburg, Virginia, United States. Seung-Hui Cho, an undergraduate student at the university, killed 32 people and wounded 17 others with two semi-automatic pistols before committing suicide. Six others were injured jumping out of windows to escape Cho.",
+          "extract_html": "<p>The <b>Virginia Tech shooting</b> was a spree shooting that occurred on Monday, April 16, 2007, comprising two attacks on the campus of the Virginia Polytechnic Institute and State University in Blacksburg, Virginia, United States. Seung-Hui Cho, an undergraduate student at the university, killed 32 people and wounded 17 others with two semi-automatic pistols before committing suicide. Six others were injured jumping out of windows to escape Cho.</p>",
+          "normalizedtitle": "Virginia Tech shooting"
+        },
+        {
+          "type": "standard",
+          "title": "Virginia_Tech",
+          "displaytitle": "<span class=\"mw-page-title-main\">Virginia Tech</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q65379",
+          "titles": {
+            "canonical": "Virginia_Tech",
+            "normalized": "Virginia Tech",
+            "display": "<span class=\"mw-page-title-main\">Virginia Tech</span>"
+          },
+          "pageid": 239897,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/en/thumb/5/54/Virginia_Tech_seal.svg/320px-Virginia_Tech_seal.svg.png",
+            "width": 320,
+            "height": 320
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/en/thumb/5/54/Virginia_Tech_seal.svg/105px-Virginia_Tech_seal.svg.png",
+            "width": 105,
+            "height": 105
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1285559631",
+          "tid": "6062f62e-1927-11f0-9ba3-cca9bc201642",
+          "timestamp": "2025-04-14T11:55:36Z",
+          "description": "Public university in Blacksburg, Virginia, US",
+          "description_source": "local",
+          "coordinates": {
+            "lat": 37.225,
+            "lon": -80.425
+          },
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Virginia_Tech",
+              "revisions": "https://en.wikipedia.org/wiki/Virginia_Tech?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Virginia_Tech?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Virginia_Tech"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Virginia_Tech",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Virginia_Tech",
+              "edit": "https://en.m.wikipedia.org/wiki/Virginia_Tech?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Virginia_Tech"
+            }
+          },
+          "extract": "Virginia Tech (VT), officially the Virginia Polytechnic Institute and State University (VPI), is a public land-grant research university with its main campus in Blacksburg, Virginia, United States. It was founded as the Virginia Agricultural and Mechanical College in 1872.",
+          "extract_html": "<p><b>Virginia Tech</b> (<b>VT</b>), officially the <b>Virginia Polytechnic Institute and State University</b> (<b>VPI</b>), is a public land-grant research university with its main campus in Blacksburg, Virginia, United States. It was founded as the <b>Virginia Agricultural and Mechanical College</b> in 1872.</p>",
+          "normalizedtitle": "Virginia Tech"
+        },
+        {
+          "type": "standard",
+          "title": "Blacksburg,_Virginia",
+          "displaytitle": "<span class=\"mw-page-title-main\">Blacksburg, Virginia</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q285816",
+          "titles": {
+            "canonical": "Blacksburg,_Virginia",
+            "normalized": "Blacksburg, Virginia",
+            "display": "<span class=\"mw-page-title-main\">Blacksburg, Virginia</span>"
+          },
+          "pageid": 137686,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Blacksburg%2C_Virginia.jpg/330px-Blacksburg%2C_Virginia.jpg",
+            "width": 320,
+            "height": 213
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Blacksburg%2C_Virginia.jpg",
+            "width": 5472,
+            "height": 3648
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1283213085",
+          "tid": "8f368b10-0de1-11f0-892d-27135f853df5",
+          "timestamp": "2025-03-31T03:38:07Z",
+          "description": "Incorporated town in Virginia, US",
+          "description_source": "local",
+          "coordinates": {
+            "lat": 37.23,
+            "lon": -80.41777778
+          },
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Blacksburg%2C_Virginia",
+              "revisions": "https://en.wikipedia.org/wiki/Blacksburg%2C_Virginia?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Blacksburg%2C_Virginia?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Blacksburg%2C_Virginia"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Blacksburg%2C_Virginia",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Blacksburg%2C_Virginia",
+              "edit": "https://en.m.wikipedia.org/wiki/Blacksburg%2C_Virginia?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Blacksburg%2C_Virginia"
+            }
+          },
+          "extract": "Blacksburg is an incorporated town in Montgomery County, Virginia, United States, with a population of 44,826 at the 2020 census. Blacksburg and the surrounding county is dominated economically and demographically by the presence of Virginia Tech.",
+          "extract_html": "<p><b>Blacksburg</b> is an incorporated town in Montgomery County, Virginia, United States, with a population of 44,826 at the 2020 census. Blacksburg and the surrounding county is dominated economically and demographically by the presence of Virginia Tech.</p>",
+          "normalizedtitle": "Blacksburg, Virginia"
+        }
+      ],
+      "year": 2007
+    },
+    {
+      "text": "India and Bangladesh began a six-day conflict over their disputed border, which ended in a stalemate.",
+      "pages": [
+        {
+          "type": "standard",
+          "title": "2001_Bangladesh–India_border_clashes",
+          "displaytitle": "<span class=\"mw-page-title-main\">2001 Bangladesh–India border clashes</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q1136021",
+          "titles": {
+            "canonical": "2001_Bangladesh–India_border_clashes",
+            "normalized": "2001 Bangladesh–India border clashes",
+            "display": "<span class=\"mw-page-title-main\">2001 Bangladesh–India border clashes</span>"
+          },
+          "pageid": 7479452,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/India_Bangladesh_Locator.svg/330px-India_Bangladesh_Locator.svg.png",
+            "width": 320,
+            "height": 141
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/India_Bangladesh_Locator.svg/940px-India_Bangladesh_Locator.svg.png",
+            "width": 940,
+            "height": 415
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1285260072",
+          "tid": "d26d15ff-17c0-11f0-b8c5-ee8567761a67",
+          "timestamp": "2025-04-12T17:08:58Z",
+          "description": "Series of armed skirmishes between Bangladesh and India",
+          "description_source": "local",
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/2001_Bangladesh%E2%80%93India_border_clashes",
+              "revisions": "https://en.wikipedia.org/wiki/2001_Bangladesh%E2%80%93India_border_clashes?action=history",
+              "edit": "https://en.wikipedia.org/wiki/2001_Bangladesh%E2%80%93India_border_clashes?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:2001_Bangladesh%E2%80%93India_border_clashes"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/2001_Bangladesh%E2%80%93India_border_clashes",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/2001_Bangladesh%E2%80%93India_border_clashes",
+              "edit": "https://en.m.wikipedia.org/wiki/2001_Bangladesh%E2%80%93India_border_clashes?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:2001_Bangladesh%E2%80%93India_border_clashes"
+            }
+          },
+          "extract": "The 2001 Bangladesh–India border clashes were a series of armed skirmishes between India and Bangladesh in April 2001. The clashes took place between troops of the Bangladesh Rifles (BDR) and the Indian Border Security Force (BSF) on the poorly-marked international border between the two countries.",
+          "extract_html": "<p>The <b>2001 Bangladesh–India border clashes</b> were a series of armed skirmishes between India and Bangladesh in April 2001. The clashes took place between troops of the Bangladesh Rifles (BDR) and the Indian Border Security Force (BSF) on the poorly-marked international border between the two countries.</p>",
+          "normalizedtitle": "2001 Bangladesh–India border clashes"
+        },
+        {
+          "type": "standard",
+          "title": "Bangladesh–India_border",
+          "displaytitle": "<span class=\"mw-page-title-main\">Bangladesh–India border</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q2399139",
+          "titles": {
+            "canonical": "Bangladesh–India_border",
+            "normalized": "Bangladesh–India border",
+            "display": "<span class=\"mw-page-title-main\">Bangladesh–India border</span>"
+          },
+          "pageid": 23241135,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Chickensneckindia.jpg/330px-Chickensneckindia.jpg",
+            "width": 320,
+            "height": 369
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Chickensneckindia.jpg",
+            "width": 474,
+            "height": 547
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1285571583",
+          "tid": "56e095e5-1935-11f0-a623-b61d40d3f389",
+          "timestamp": "2025-04-14T13:35:33Z",
+          "description": "International border between India and Bangladesh",
+          "description_source": "local",
+          "coordinates": {
+            "lat": 26.26194444,
+            "lon": 88.75166667
+          },
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Bangladesh%E2%80%93India_border",
+              "revisions": "https://en.wikipedia.org/wiki/Bangladesh%E2%80%93India_border?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Bangladesh%E2%80%93India_border?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Bangladesh%E2%80%93India_border"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Bangladesh%E2%80%93India_border",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Bangladesh%E2%80%93India_border",
+              "edit": "https://en.m.wikipedia.org/wiki/Bangladesh%E2%80%93India_border?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Bangladesh%E2%80%93India_border"
+            }
+          },
+          "extract": "The Bangladesh–India border, known locally as the Radcliffe line, is an international border running between the republics of Bangladesh and India that demarcates the six divisions of Bangladesh and the Indian states.",
+          "extract_html": "<p>The <b>Bangladesh–India border</b>, known locally as the <b>Radcliffe line</b>, is an international border running between the republics of Bangladesh and India that demarcates the six divisions of Bangladesh and the Indian states.</p>",
+          "normalizedtitle": "Bangladesh–India border"
+        }
+      ],
+      "year": 2001
+    },
+    {
+      "text": "In response to an open letter written by white clergymen, Martin Luther King Jr. wrote the Letter from Birmingham Jail in defence of the strategy of nonviolent resistance against racism.",
+      "pages": [
+        {
+          "type": "standard",
+          "title": "A_Call_for_Unity",
+          "displaytitle": "<span class=\"mw-page-title-main\">A Call for Unity</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q4655705",
+          "titles": {
+            "canonical": "A_Call_for_Unity",
+            "normalized": "A Call for Unity",
+            "display": "<span class=\"mw-page-title-main\">A Call for Unity</span>"
+          },
+          "pageid": 1798912,
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1281485787",
+          "tid": "fe2a157d-05b1-11f0-a882-1b00980e91d9",
+          "timestamp": "2025-03-20T17:37:28Z",
+          "description": "1963 open letter and event in the US Civil Rights movement",
+          "description_source": "local",
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/A_Call_for_Unity",
+              "revisions": "https://en.wikipedia.org/wiki/A_Call_for_Unity?action=history",
+              "edit": "https://en.wikipedia.org/wiki/A_Call_for_Unity?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:A_Call_for_Unity"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/A_Call_for_Unity",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/A_Call_for_Unity",
+              "edit": "https://en.m.wikipedia.org/wiki/A_Call_for_Unity?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:A_Call_for_Unity"
+            }
+          },
+          "extract": "\"A Call for Unity\" was an open letter published in The Birmingham [Alabama] News, on April 12, 1963, by eight local white clergymen in response to civil rights demonstrations taking place in the area at the time. In the letter, they took issue with events \"directed and led in part by outsiders,\" and they urged activists to engage in local negotiations and to use the courts if rights were being denied, rather than to protest.",
+          "extract_html": "<p>\"<b>A Call for Unity</b>\" was an open letter published in <i>The Birmingham </i>[Alabama]<i> News</i>, on April 12, 1963, by eight local white clergymen in response to civil rights demonstrations taking place in the area at the time. In the letter, they took issue with events \"directed and led in part by outsiders,\" and they urged activists to engage in local negotiations and to use the courts if rights were being denied, rather than to protest.</p>",
+          "normalizedtitle": "A Call for Unity"
+        },
+        {
+          "type": "standard",
+          "title": "Martin_Luther_King_Jr.",
+          "displaytitle": "<span class=\"mw-page-title-main\">Martin Luther King Jr.</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q8027",
+          "titles": {
+            "canonical": "Martin_Luther_King_Jr.",
+            "normalized": "Martin Luther King Jr.",
+            "display": "<span class=\"mw-page-title-main\">Martin Luther King Jr.</span>"
+          },
+          "pageid": 20076,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Martin_Luther_King%2C_Jr..jpg/330px-Martin_Luther_King%2C_Jr..jpg",
+            "width": 320,
+            "height": 480
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/0/05/Martin_Luther_King%2C_Jr..jpg",
+            "width": 992,
+            "height": 1488
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1285680903",
+          "tid": "f9394c98-19a7-11f0-bcad-2867c405b371",
+          "timestamp": "2025-04-15T03:16:08Z",
+          "description": "American civil rights leader (1929–1968)",
+          "description_source": "local",
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Martin_Luther_King_Jr.",
+              "revisions": "https://en.wikipedia.org/wiki/Martin_Luther_King_Jr.?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Martin_Luther_King_Jr.?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Martin_Luther_King_Jr."
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Martin_Luther_King_Jr.",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Martin_Luther_King_Jr.",
+              "edit": "https://en.m.wikipedia.org/wiki/Martin_Luther_King_Jr.?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Martin_Luther_King_Jr."
+            }
+          },
+          "extract": "Martin Luther King Jr. was an American Baptist minister, activist, and political philosopher who was one of the most prominent leaders in the civil rights movement from 1955 until his assassination in 1968. He advanced civil rights for people of color in the United States through the use of nonviolent resistance and nonviolent civil disobedience against Jim Crow laws and other forms of legalized discrimination.",
+          "extract_html": "<p><b>Martin Luther King Jr.</b> was an American Baptist minister, activist, and political philosopher who was one of the most prominent leaders in the civil rights movement from 1955 until his assassination in 1968. He advanced civil rights for people of color in the United States through the use of nonviolent resistance and nonviolent civil disobedience against Jim Crow laws and other forms of legalized discrimination.</p>",
+          "normalizedtitle": "Martin Luther King Jr."
+        },
+        {
+          "type": "standard",
+          "title": "Letter_from_Birmingham_Jail",
+          "displaytitle": "<span class=\"mw-page-title-main\">Letter from Birmingham Jail</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q1609768",
+          "titles": {
+            "canonical": "Letter_from_Birmingham_Jail",
+            "normalized": "Letter from Birmingham Jail",
+            "display": "<span class=\"mw-page-title-main\">Letter from Birmingham Jail</span>"
+          },
+          "pageid": 356391,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Recreation_of_Martin_Luther_King%27s_Cell_in_Birmingham_Jail_-_National_Civil_Rights_Museum_-_Downtown_Memphis_-_Tennessee_-_USA.jpg/330px-Recreation_of_Martin_Luther_King%27s_Cell_in_Birmingham_Jail_-_National_Civil_Rights_Museum_-_Downtown_Memphis_-_Tennessee_-_USA.jpg",
+            "width": 320,
+            "height": 240
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Recreation_of_Martin_Luther_King%27s_Cell_in_Birmingham_Jail_-_National_Civil_Rights_Museum_-_Downtown_Memphis_-_Tennessee_-_USA.jpg",
+            "width": 3648,
+            "height": 2736
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1284742557",
+          "tid": "62515537-1542-11f0-bcc7-7ff819cca964",
+          "timestamp": "2025-04-09T12:58:51Z",
+          "description": "Open letter written by Martin Luther King, Jr",
+          "description_source": "local",
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Letter_from_Birmingham_Jail",
+              "revisions": "https://en.wikipedia.org/wiki/Letter_from_Birmingham_Jail?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Letter_from_Birmingham_Jail?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Letter_from_Birmingham_Jail"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Letter_from_Birmingham_Jail",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Letter_from_Birmingham_Jail",
+              "edit": "https://en.m.wikipedia.org/wiki/Letter_from_Birmingham_Jail?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Letter_from_Birmingham_Jail"
+            }
+          },
+          "extract": "The \"Letter from Birmingham Jail\", also known as the \"Letter from Birmingham City Jail\" and \"The Negro Is Your Brother\", is an open letter written on April 16, 1963, by Martin Luther King Jr. It says that people have a moral responsibility to break unjust laws and to take direct action rather than waiting potentially forever for justice to come through the courts. Responding to being referred to as an \"outsider\", King writes: \"Injustice anywhere is a threat to justice everywhere.\"",
+          "extract_html": "<p>The \"<b>Letter from Birmingham Jail</b>\", also known as the \"<b>Letter from Birmingham City Jail</b>\" and \"<b>The Negro Is Your Brother</b>\", is an open letter written on April 16, 1963, by Martin Luther King Jr. It says that people have a moral responsibility to break unjust laws and to take direct action rather than waiting potentially forever for justice to come through the courts. Responding to being referred to as an \"outsider\", King writes: \"Injustice anywhere is a threat to justice everywhere.\"</p>",
+          "normalizedtitle": "Letter from Birmingham Jail"
+        },
+        {
+          "type": "standard",
+          "title": "Nonviolent_resistance",
+          "displaytitle": "<span class=\"mw-page-title-main\">Nonviolent resistance</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q754479",
+          "titles": {
+            "canonical": "Nonviolent_resistance",
+            "normalized": "Nonviolent resistance",
+            "display": "<span class=\"mw-page-title-main\">Nonviolent resistance</span>"
+          },
+          "pageid": 19698044,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Gandhi_Salt_March.jpg/330px-Gandhi_Salt_March.jpg",
+            "width": 320,
+            "height": 228
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/7/76/Gandhi_Salt_March.jpg",
+            "width": 640,
+            "height": 455
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1284381173",
+          "tid": "4ef387bb-137a-11f0-ba16-b44dba6ecb5f",
+          "timestamp": "2025-04-07T06:34:08Z",
+          "description": "Act of protest through nonviolent means",
+          "description_source": "local",
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Nonviolent_resistance",
+              "revisions": "https://en.wikipedia.org/wiki/Nonviolent_resistance?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Nonviolent_resistance?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Nonviolent_resistance"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Nonviolent_resistance",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Nonviolent_resistance",
+              "edit": "https://en.m.wikipedia.org/wiki/Nonviolent_resistance?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Nonviolent_resistance"
+            }
+          },
+          "extract": "Nonviolent resistance, or nonviolent action, sometimes called civil resistance, is the practice of achieving goals such as social change through symbolic protests, civil disobedience, economic or political noncooperation, satyagraha, constructive program, or other methods, while refraining from violence and the threat of violence. This type of action highlights the desires of an individual or group that feels that something needs to change to improve the current condition of the resisting person or group.",
+          "extract_html": "<p><b>Nonviolent resistance</b>, or <b>nonviolent action</b>, sometimes called civil resistance, is the practice of achieving goals such as social change through symbolic protests, civil disobedience, economic or political noncooperation, satyagraha, constructive program, or other methods, while refraining from violence and the threat of violence. This type of action highlights the desires of an individual or group that feels that something needs to change to improve the current condition of the resisting person or group.</p>",
+          "normalizedtitle": "Nonviolent resistance"
+        }
+      ],
+      "year": 1963
+    },
+    {
+      "text": "The Organisation for European Economic Co-operation, headquartered in Paris, was founded.",
+      "pages": [
+        {
+          "type": "standard",
+          "title": "OECD",
+          "displaytitle": "<span class=\"mw-page-title-main\">OECD</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q41550",
+          "titles": {
+            "canonical": "OECD",
+            "normalized": "OECD",
+            "display": "<span class=\"mw-page-title-main\">OECD</span>"
+          },
+          "pageid": 33853117,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ch%C3%A2teau_de_la_Muette%2C_Paris_20_March_2019_004.jpg/330px-Ch%C3%A2teau_de_la_Muette%2C_Paris_20_March_2019_004.jpg",
+            "width": 320,
+            "height": 174
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/8/85/Ch%C3%A2teau_de_la_Muette%2C_Paris_20_March_2019_004.jpg",
+            "width": 5555,
+            "height": 3015
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1285886107",
+          "tid": "4144b4b4-1ab2-11f0-bc9d-07ad130c22a2",
+          "timestamp": "2025-04-16T11:02:15Z",
+          "description": "Intergovernmental economic organization",
+          "description_source": "local",
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/OECD",
+              "revisions": "https://en.wikipedia.org/wiki/OECD?action=history",
+              "edit": "https://en.wikipedia.org/wiki/OECD?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:OECD"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/OECD",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/OECD",
+              "edit": "https://en.m.wikipedia.org/wiki/OECD?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:OECD"
+            }
+          },
+          "extract": "The Organisation for Economic Co-operation and Development is an intergovernmental organization with 38 member countries, founded in 1961 to stimulate economic progress and world trade. It is a forum whose member countries describe themselves as committed to democracy and the market economy, providing a platform to compare policy experiences, seek answers to common problems, identify good practices, and coordinate domestic and international policies of its members.",
+          "extract_html": "<p>The <b>Organisation for Economic Co-operation and Development</b> is an intergovernmental organization with 38 member countries, founded in 1961 to stimulate economic progress and world trade. It is a forum whose member countries describe themselves as committed to democracy and the market economy, providing a platform to compare policy experiences, seek answers to common problems, identify good practices, and coordinate domestic and international policies of its members.</p>",
+          "normalizedtitle": "OECD"
+        }
+      ],
+      "year": 1948
+    },
+    {
+      "text": "Second World War: British and Canadian forces concluded the Liberation of Arnhem in the Netherlands from German occupation.",
+      "pages": [
+        {
+          "type": "standard",
+          "title": "World_War_II",
+          "displaytitle": "<span class=\"mw-page-title-main\">World War II</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q362",
+          "titles": {
+            "canonical": "World_War_II",
+            "normalized": "World War II",
+            "display": "<span class=\"mw-page-title-main\">World War II</span>"
+          },
+          "pageid": 32927,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Bundesarchiv_Bild_101I-646-5188-17%2C_Flugzeuge_Junkers_Ju_87.jpg/330px-Bundesarchiv_Bild_101I-646-5188-17%2C_Flugzeuge_Junkers_Ju_87.jpg",
+            "width": 320,
+            "height": 218
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/1/10/Bundesarchiv_Bild_101I-646-5188-17%2C_Flugzeuge_Junkers_Ju_87.jpg",
+            "width": 798,
+            "height": 544
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1285666647",
+          "tid": "51b33868-1995-11f0-ad4b-03697fd62e80",
+          "timestamp": "2025-04-15T01:02:36Z",
+          "description": "1939–1945 global conflict",
+          "description_source": "local",
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/World_War_II",
+              "revisions": "https://en.wikipedia.org/wiki/World_War_II?action=history",
+              "edit": "https://en.wikipedia.org/wiki/World_War_II?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:World_War_II"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/World_War_II",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/World_War_II",
+              "edit": "https://en.m.wikipedia.org/wiki/World_War_II?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:World_War_II"
+            }
+          },
+          "extract": "World War II or the Second World War was a global conflict between two coalitions: the Allies and the Axis powers. Nearly all of the world's countries participated, with many nations mobilising all resources in pursuit of total war. Tanks and aircraft played major roles, enabling the strategic bombing of cities and delivery of the first and only nuclear weapons ever used in war. World War II was the deadliest conflict in history, resulting in 70 to 85 million deaths, more than half of which were civilians. Millions died in genocides, including the Holocaust, and by massacres, starvation, and disease. After the Allied victory, Germany, Austria, Japan, and Korea were occupied, and German and Japanese leaders were tried for war crimes.",
+          "extract_html": "<p><b>World War II</b> or the <b>Second World War</b> was a global conflict between two coalitions: the Allies and the Axis powers. Nearly all of the world's countries participated, with many nations mobilising all resources in pursuit of total war. Tanks and aircraft played major roles, enabling the strategic bombing of cities and delivery of the first and only nuclear weapons ever used in war. World War II was the deadliest conflict in history, resulting in 70 to 85 million deaths, more than half of which were civilians. Millions died in genocides, including the Holocaust, and by massacres, starvation, and disease. After the Allied victory, Germany, Austria, Japan, and Korea were occupied, and German and Japanese leaders were tried for war crimes.</p>",
+          "normalizedtitle": "World War II"
+        },
+        {
+          "type": "standard",
+          "title": "Liberation_of_Arnhem",
+          "displaytitle": "<span class=\"mw-page-title-main\">Liberation of Arnhem</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q6541032",
+          "titles": {
+            "canonical": "Liberation_of_Arnhem",
+            "normalized": "Liberation of Arnhem",
+            "display": "<span class=\"mw-page-title-main\">Liberation of Arnhem</span>"
+          },
+          "pageid": 5289167,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/The_British_Army_in_North-west_Europe_1944-45_BU3515.jpg/330px-The_British_Army_in_North-west_Europe_1944-45_BU3515.jpg",
+            "width": 320,
+            "height": 333
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/b/bd/The_British_Army_in_North-west_Europe_1944-45_BU3515.jpg",
+            "width": 767,
+            "height": 799
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1285945124",
+          "tid": "9525aeed-1af7-11f0-8c65-e7c5d19e0fb2",
+          "timestamp": "2025-04-16T19:18:31Z",
+          "description": "WWII expulsion of military of Nazi Germany from Arnhem, Netherlands",
+          "description_source": "local",
+          "coordinates": {
+            "lat": 51.98444444,
+            "lon": 5.91
+          },
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Liberation_of_Arnhem",
+              "revisions": "https://en.wikipedia.org/wiki/Liberation_of_Arnhem?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Liberation_of_Arnhem?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Liberation_of_Arnhem"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Liberation_of_Arnhem",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Liberation_of_Arnhem",
+              "edit": "https://en.m.wikipedia.org/wiki/Liberation_of_Arnhem?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Liberation_of_Arnhem"
+            }
+          },
+          "extract": "Operation Anger was a military operation to seize the city of Arnhem in April 1945, during the closing stages of the Second World War. It is also known as the Second Battle of Arnhem or the Liberation of Arnhem. The operation was part of the Canadian First Army's liberation of the Netherlands and was led by the 49th British Infantry Division, supported by armour of the 5th Canadian Armoured Division, Royal Air Force air strikes and boats of the Royal Navy.",
+          "extract_html": "<p><b>Operation Anger</b> was a military operation to seize the city of Arnhem in April 1945, during the closing stages of the Second World War. It is also known as the <b>Second Battle of Arnhem</b> or the <b>Liberation of Arnhem</b>. The operation was part of the Canadian First Army's liberation of the Netherlands and was led by the 49th British Infantry Division, supported by armour of the 5th Canadian Armoured Division, Royal Air Force air strikes and boats of the Royal Navy.</p>",
+          "normalizedtitle": "Liberation of Arnhem"
+        }
+      ],
+      "year": 1945
+    },
+    {
+      "text": "Polish–Soviet War: The Polish army launched the Vilna offensive to capture Vilnius (now in Lithuania) from the Red Army.",
+      "pages": [
+        {
+          "type": "standard",
+          "title": "Polish–Soviet_War",
+          "displaytitle": "<span class=\"mw-page-title-main\">Polish–Soviet War</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q186284",
+          "titles": {
+            "canonical": "Polish–Soviet_War",
+            "normalized": "Polish–Soviet War",
+            "display": "<span class=\"mw-page-title-main\">Polish–Soviet War</span>"
+          },
+          "pageid": 353000,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Polish-soviet_war_montage.jpg/330px-Polish-soviet_war_montage.jpg",
+            "width": 320,
+            "height": 567
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Polish-soviet_war_montage.jpg",
+            "width": 2892,
+            "height": 5120
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1284590817",
+          "tid": "4beaa626-1490-11f0-8f38-6b6201fbfb5f",
+          "timestamp": "2025-04-08T15:44:03Z",
+          "description": "20th-century conflict between Poland and Russia",
+          "description_source": "local",
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Polish%E2%80%93Soviet_War",
+              "revisions": "https://en.wikipedia.org/wiki/Polish%E2%80%93Soviet_War?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Polish%E2%80%93Soviet_War?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Polish%E2%80%93Soviet_War"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Polish%E2%80%93Soviet_War",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Polish%E2%80%93Soviet_War",
+              "edit": "https://en.m.wikipedia.org/wiki/Polish%E2%80%93Soviet_War?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Polish%E2%80%93Soviet_War"
+            }
+          },
+          "extract": "The Polish–Soviet War was fought primarily between the Second Polish Republic and the Russian Soviet Federative Socialist Republic, following World War I and the Russian Revolution.",
+          "extract_html": "<p>The <b>Polish–Soviet War</b> was fought primarily between the Second Polish Republic and the Russian Soviet Federative Socialist Republic, following World War I and the Russian Revolution.</p>",
+          "normalizedtitle": "Polish–Soviet War"
+        },
+        {
+          "type": "standard",
+          "title": "Polish_Land_Forces",
+          "displaytitle": "<span class=\"mw-page-title-main\">Polish Land Forces</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q248989",
+          "titles": {
+            "canonical": "Polish_Land_Forces",
+            "normalized": "Polish Land Forces",
+            "display": "<span class=\"mw-page-title-main\">Polish Land Forces</span>"
+          },
+          "pageid": 1530705,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/POL_Wojska_L%C4%85dowe.svg/330px-POL_Wojska_L%C4%85dowe.svg.png",
+            "width": 320,
+            "height": 453
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/POL_Wojska_L%C4%85dowe.svg/750px-POL_Wojska_L%C4%85dowe.svg.png",
+            "width": 750,
+            "height": 1061
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1285051586",
+          "tid": "1aa8ee9b-16c9-11f0-aae5-ba1219b0ab56",
+          "timestamp": "2025-04-11T11:35:44Z",
+          "description": "Ground warfare branch of Poland's military forces",
+          "description_source": "local",
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Polish_Land_Forces",
+              "revisions": "https://en.wikipedia.org/wiki/Polish_Land_Forces?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Polish_Land_Forces?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Polish_Land_Forces"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Polish_Land_Forces",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Polish_Land_Forces",
+              "edit": "https://en.m.wikipedia.org/wiki/Polish_Land_Forces?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Polish_Land_Forces"
+            }
+          },
+          "extract": "The Land Forces are the land forces of the Polish Armed Forces. They currently contain some 110,000 active personnel and form many components of the European Union and NATO deployments around the world. Poland's recorded military history stretches back a millennium – since the 10th century. Poland's modern army was formed after Poland regained independence following World War I in 1918.",
+          "extract_html": "<p>The <b>Land Forces</b> are the land forces of the Polish Armed Forces. They currently contain some 110,000 active personnel and form many components of the European Union and NATO deployments around the world. Poland's recorded military history stretches back a millennium – since the 10th century. Poland's modern army was formed after Poland regained independence following World War I in 1918.</p>",
+          "normalizedtitle": "Polish Land Forces"
+        },
+        {
+          "type": "standard",
+          "title": "Vilna_offensive",
+          "displaytitle": "<span class=\"mw-page-title-main\">Vilna offensive</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q7931177",
+          "titles": {
+            "canonical": "Vilna_offensive",
+            "normalized": "Vilna offensive",
+            "display": "<span class=\"mw-page-title-main\">Vilna offensive</span>"
+          },
+          "pageid": 7749397,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Polish_army_in_Wilno_1919.jpg/330px-Polish_army_in_Wilno_1919.jpg",
+            "width": 320,
+            "height": 471
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/en/0/02/Polish_army_in_Wilno_1919.jpg",
+            "width": 387,
+            "height": 570
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1278757043",
+          "tid": "9efcafae-f8ef-11ef-8280-9230be9b7d1e",
+          "timestamp": "2025-03-04T11:55:52Z",
+          "description": "1919 battle between Polish and Soviet forces",
+          "description_source": "local",
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Vilna_offensive",
+              "revisions": "https://en.wikipedia.org/wiki/Vilna_offensive?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Vilna_offensive?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Vilna_offensive"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Vilna_offensive",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Vilna_offensive",
+              "edit": "https://en.m.wikipedia.org/wiki/Vilna_offensive?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Vilna_offensive"
+            }
+          },
+          "extract": "The Vilna offensive was a campaign of the Polish–Soviet War of 1919–1921. The Polish army launched an offensive on April 16, 1919, to take Vilnius from the Red Army. After three days of street fighting from April 19–21, the city was captured by Polish forces, causing the Red Army to retreat. During the offensive, the Poles also succeeded in securing the nearby cities of Lida, Pinsk, Navahrudak, and Baranovichi.",
+          "extract_html": "<p>The <b>Vilna offensive</b> was a campaign of the Polish–Soviet War of 1919–1921. The Polish army launched an offensive on April 16, 1919, to take Vilnius from the Red Army. After three days of street fighting from April 19–21, the city was captured by Polish forces, causing the Red Army to retreat. During the offensive, the Poles also succeeded in securing the nearby cities of Lida, Pinsk, Navahrudak, and Baranovichi.</p>",
+          "normalizedtitle": "Vilna offensive"
+        },
+        {
+          "type": "standard",
+          "title": "Vilnius",
+          "displaytitle": "<span class=\"mw-page-title-main\">Vilnius</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q216",
+          "titles": {
+            "canonical": "Vilnius",
+            "normalized": "Vilnius",
+            "display": "<span class=\"mw-page-title-main\">Vilnius</span>"
+          },
+          "pageid": 32597,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/en/thumb/8/84/The_White_Bridge_and_%C5%A0nipi%C5%A1k%C4%97s_district_in_Vilnius_in_2023_by_Augustas_Did%C5%BEgalvis.jpg/330px-The_White_Bridge_and_%C5%A0nipi%C5%A1k%C4%97s_district_in_Vilnius_in_2023_by_Augustas_Did%C5%BEgalvis.jpg",
+            "width": 320,
+            "height": 212
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/en/8/84/The_White_Bridge_and_%C5%A0nipi%C5%A1k%C4%97s_district_in_Vilnius_in_2023_by_Augustas_Did%C5%BEgalvis.jpg",
+            "width": 1800,
+            "height": 1195
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1285222129",
+          "tid": "f109cf8a-1795-11f0-b378-960c36f9f5da",
+          "timestamp": "2025-04-12T12:02:01Z",
+          "description": "Capital and largest city of Lithuania",
+          "description_source": "local",
+          "coordinates": {
+            "lat": 54.68722222,
+            "lon": 25.28
+          },
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Vilnius",
+              "revisions": "https://en.wikipedia.org/wiki/Vilnius?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Vilnius?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Vilnius"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Vilnius",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Vilnius",
+              "edit": "https://en.m.wikipedia.org/wiki/Vilnius?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Vilnius"
+            }
+          },
+          "extract": "Vilnius is the capital of and largest city in Lithuania and the most-populous city in the Baltic states. The city's estimated January 2025 population was 607,404, and the Vilnius urban area has an estimated population of 747,864.",
+          "extract_html": "<p><b>Vilnius</b> is the capital of and largest city in Lithuania and the most-populous city in the Baltic states. The city's estimated January 2025 population was 607,404, and the Vilnius urban area has an estimated population of 747,864.</p>",
+          "normalizedtitle": "Vilnius"
+        },
+        {
+          "type": "standard",
+          "title": "Red_Army",
+          "displaytitle": "<span class=\"mw-page-title-main\">Red Army</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q251395",
+          "titles": {
+            "canonical": "Red_Army",
+            "normalized": "Red Army",
+            "display": "<span class=\"mw-page-title-main\">Red Army</span>"
+          },
+          "pageid": 25682,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Red_Army_Badge.svg/320px-Red_Army_Badge.svg.png",
+            "width": 320,
+            "height": 305
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Red_Army_Badge.svg/257px-Red_Army_Badge.svg.png",
+            "width": 257,
+            "height": 245
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1285563947",
+          "tid": "47f5dd2c-192d-11f0-9cc1-51ca7e724b33",
+          "timestamp": "2025-04-14T12:37:52Z",
+          "description": "Soviet army and air force from 1918 to 1946",
+          "description_source": "local",
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Red_Army",
+              "revisions": "https://en.wikipedia.org/wiki/Red_Army?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Red_Army?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Red_Army"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Red_Army",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Red_Army",
+              "edit": "https://en.m.wikipedia.org/wiki/Red_Army?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Red_Army"
+            }
+          },
+          "extract": "The Workers' and Peasants' Red Army, often shortened to the Red Army, was the army and air force of the Russian Soviet Republic and, from 1922, the Soviet Union. The army was established in January 1918 by a decree of the Council of People's Commissars to oppose the military forces of the new nation's adversaries during the Russian Civil War, especially the various groups collectively known as the White Army. In February 1946, the Red Army was renamed the \"Soviet Army\". Following the dissolution of the Soviet Union it was split between the post-Soviet states, with its bulk becoming the Russian Ground Forces, commonly considered to be the successor of the Soviet Army.",
+          "extract_html": "<p>The <b>Workers' and Peasants' Red Army</b>, often shortened to the <b>Red Army</b>, was the army and air force of the Russian Soviet Republic and, from 1922, the Soviet Union. The army was established in January 1918 by a decree of the Council of People's Commissars to oppose the military forces of the new nation's adversaries during the Russian Civil War, especially the various groups collectively known as the White Army. In February 1946, the Red Army was renamed the \"Soviet Army\". Following the dissolution of the Soviet Union it was split between the post-Soviet states, with its bulk becoming the Russian Ground Forces, commonly considered to be the successor of the Soviet Army.</p>",
+          "normalizedtitle": "Red Army"
+        }
+      ],
+      "year": 1919
+    },
+    {
+      "text": "World War I: Several French army corps began a massive assault against the German-occupied Chemin des Dames ridge, south of Laon, France.",
+      "pages": [
+        {
+          "type": "standard",
+          "title": "World_War_I",
+          "displaytitle": "<span class=\"mw-page-title-main\">World War I</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q361",
+          "titles": {
+            "canonical": "World_War_I",
+            "normalized": "World War I",
+            "display": "<span class=\"mw-page-title-main\">World War I</span>"
+          },
+          "pageid": 4764461,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Bataille_de_Verdun_1916.jpg/320px-Bataille_de_Verdun_1916.jpg",
+            "width": 320,
+            "height": 239
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Bataille_de_Verdun_1916.jpg",
+            "width": 1875,
+            "height": 1402
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1285751978",
+          "tid": "a21aadb2-1a0e-11f0-b294-8ca683599329",
+          "timestamp": "2025-04-15T15:31:00Z",
+          "description": "1914–1918 global conflict",
+          "description_source": "local",
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/World_War_I",
+              "revisions": "https://en.wikipedia.org/wiki/World_War_I?action=history",
+              "edit": "https://en.wikipedia.org/wiki/World_War_I?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:World_War_I"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/World_War_I",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/World_War_I",
+              "edit": "https://en.m.wikipedia.org/wiki/World_War_I?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:World_War_I"
+            }
+          },
+          "extract": "World War I or the First World War, also known as the Great War, was a global conflict between two coalitions: the Allies and the Central Powers. Fighting took place mainly in Europe and the Middle East, as well as in parts of Africa and the Asia-Pacific, and in Europe was characterised by trench warfare; the widespread use of artillery, machine guns, and chemical weapons (gas); and the introductions of tanks and aircraft. World War I was one of the deadliest conflicts in history, resulting in an estimated 10 million military dead and more than 20 million wounded, plus some 10 million civilian dead from causes including genocide. The movement of large numbers of people was a major factor in the deadly Spanish flu pandemic.",
+          "extract_html": "<p><b>World War I</b> or the <b>First World War</b>, also known as the <b>Great War</b>, was a global conflict between two coalitions: the Allies and the Central Powers. Fighting took place mainly in Europe and the Middle East, as well as in parts of Africa and the Asia-Pacific, and in Europe was characterised by trench warfare; the widespread use of artillery, machine guns, and chemical weapons (gas); and the introductions of tanks and aircraft. World War I was one of the deadliest conflicts in history, resulting in an estimated 10 million military dead and more than 20 million wounded, plus some 10 million civilian dead from causes including genocide. The movement of large numbers of people was a major factor in the deadly Spanish flu pandemic.</p>",
+          "normalizedtitle": "World War I"
+        },
+        {
+          "type": "standard",
+          "title": "Second_Battle_of_the_Aisne",
+          "displaytitle": "<span class=\"mw-page-title-main\">Second Battle of the Aisne</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q1694094",
+          "titles": {
+            "canonical": "Second_Battle_of_the_Aisne",
+            "normalized": "Second Battle of the Aisne",
+            "display": "<span class=\"mw-page-title-main\">Second Battle of the Aisne</span>"
+          },
+          "pageid": 2791272,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Aisne_Front_1917-Guignicourt.jpg/330px-Aisne_Front_1917-Guignicourt.jpg",
+            "width": 320,
+            "height": 191
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Aisne_Front_1917-Guignicourt.jpg",
+            "width": 647,
+            "height": 387
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1283254888",
+          "tid": "c37a6482-0e1a-11f0-bf24-d162f4c511ce",
+          "timestamp": "2025-03-31T10:27:36Z",
+          "description": "Battle of the First World War",
+          "description_source": "local",
+          "coordinates": {
+            "lat": 49.4,
+            "lon": 3.6
+          },
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Second_Battle_of_the_Aisne",
+              "revisions": "https://en.wikipedia.org/wiki/Second_Battle_of_the_Aisne?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Second_Battle_of_the_Aisne?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Second_Battle_of_the_Aisne"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Second_Battle_of_the_Aisne",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Second_Battle_of_the_Aisne",
+              "edit": "https://en.m.wikipedia.org/wiki/Second_Battle_of_the_Aisne?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Second_Battle_of_the_Aisne"
+            }
+          },
+          "extract": "The Second Battle of the Aisne was the main part of the Nivelle Offensive, a Franco-British attempt to inflict a decisive defeat on the German armies in France. The Entente strategy was to conduct offensives from north to south, beginning with an attack by the British Expeditionary Force (BEF) then the main attack by two French army groups on the Aisne. General Robert Nivelle planned the offensive in December 1916, after he replaced Joseph Joffre as Commander-in-Chief of the French Army.",
+          "extract_html": "<p>The <b>Second Battle of the Aisne</b> was the main part of the Nivelle Offensive, a Franco-British attempt to inflict a decisive defeat on the German armies in France. The Entente strategy was to conduct offensives from north to south, beginning with an attack by the British Expeditionary Force (BEF) then the main attack by two French army groups on the Aisne. General Robert Nivelle planned the offensive in December 1916, after he replaced Joseph Joffre as Commander-in-Chief of the French Army.</p>",
+          "normalizedtitle": "Second Battle of the Aisne"
+        },
+        {
+          "type": "standard",
+          "title": "Chemin_des_Dames",
+          "displaytitle": "<span class=\"mw-page-title-main\">Chemin des Dames</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q1069359",
+          "titles": {
+            "canonical": "Chemin_des_Dames",
+            "normalized": "Chemin des Dames",
+            "display": "<span class=\"mw-page-title-main\">Chemin des Dames</span>"
+          },
+          "pageid": 838074,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Cerny-en-Laonnois-FR-02-A-02.JPG/330px-Cerny-en-Laonnois-FR-02-A-02.JPG",
+            "width": 320,
+            "height": 427
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Cerny-en-Laonnois-FR-02-A-02.JPG",
+            "width": 2425,
+            "height": 3234
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1280899419",
+          "tid": "828b2f77-02d3-11f0-a264-154bb62f158d",
+          "timestamp": "2025-03-17T01:59:50Z",
+          "description": "Road in France",
+          "description_source": "local",
+          "coordinates": {
+            "lat": 49.44305556,
+            "lon": 3.71027778
+          },
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Chemin_des_Dames",
+              "revisions": "https://en.wikipedia.org/wiki/Chemin_des_Dames?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Chemin_des_Dames?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Chemin_des_Dames"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Chemin_des_Dames",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Chemin_des_Dames",
+              "edit": "https://en.m.wikipedia.org/wiki/Chemin_des_Dames?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Chemin_des_Dames"
+            }
+          },
+          "extract": "In France, the Chemin des Dames is part of the route départementale D18 and runs east and west in the Aisne department, between in the west, the Route Nationale 2, and in the east, the D1044 at Corbeny. It is some 30 kilometres (19 mi) long and runs along a ridge between the valleys of the rivers Aisne and Ailette.",
+          "extract_html": "<p>In France, the <b>Chemin des Dames</b> is part of the route départementale D18 and runs east and west in the Aisne department, between in the west, the Route Nationale 2, and in the east, the D1044 at Corbeny. It is some 30 kilometres (19 mi) long and runs along a ridge between the valleys of the rivers Aisne and Ailette.</p>",
+          "normalizedtitle": "Chemin des Dames"
+        },
+        {
+          "type": "standard",
+          "title": "Laon",
+          "displaytitle": "<span class=\"mw-page-title-main\">Laon</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q167141",
+          "titles": {
+            "canonical": "Laon",
+            "normalized": "Laon",
+            "display": "<span class=\"mw-page-title-main\">Laon</span>"
+          },
+          "pageid": 83171,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/La_cath%C3%A9drale_de_Laon_DSC_0707.jpg/330px-La_cath%C3%A9drale_de_Laon_DSC_0707.jpg",
+            "width": 320,
+            "height": 212
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/6/65/La_cath%C3%A9drale_de_Laon_DSC_0707.jpg",
+            "width": 4928,
+            "height": 3264
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1258798490",
+          "tid": "14a68fc4-a834-11ef-b214-2d7afab57771",
+          "timestamp": "2024-11-21T18:11:51Z",
+          "description": "Prefecture and commune in Hauts-de-France, France",
+          "description_source": "local",
+          "coordinates": {
+            "lat": 49.5639,
+            "lon": 3.6244
+          },
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Laon",
+              "revisions": "https://en.wikipedia.org/wiki/Laon?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Laon?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Laon"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Laon",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Laon",
+              "edit": "https://en.m.wikipedia.org/wiki/Laon?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Laon"
+            }
+          },
+          "extract": "Laon is a city in the Aisne department in Hauts-de-France in northern France.",
+          "extract_html": "<p><b>Laon</b> is a city in the Aisne department in Hauts-de-France in northern France.</p>",
+          "normalizedtitle": "Laon"
+        }
+      ],
+      "year": 1917
+    },
+    {
+      "text": "American pilot Harriet Quimby (pictured)  became the first woman to fly across the English Channel.",
+      "pages": [
+        {
+          "type": "standard",
+          "title": "Harriet_Quimby",
+          "displaytitle": "<span class=\"mw-page-title-main\">Harriet Quimby</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q254352",
+          "titles": {
+            "canonical": "Harriet_Quimby",
+            "normalized": "Harriet Quimby",
+            "display": "<span class=\"mw-page-title-main\">Harriet Quimby</span>"
+          },
+          "pageid": 984642,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Harriet_Quimby_1911.jpg/330px-Harriet_Quimby_1911.jpg",
+            "width": 320,
+            "height": 645
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/1/19/Harriet_Quimby_1911.jpg",
+            "width": 450,
+            "height": 907
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1285874424",
+          "tid": "6c27f569-1aa4-11f0-8e46-66ff121aca38",
+          "timestamp": "2025-04-16T09:23:14Z",
+          "description": "American aviation pioneer (1875–1912)",
+          "description_source": "local",
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Harriet_Quimby",
+              "revisions": "https://en.wikipedia.org/wiki/Harriet_Quimby?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Harriet_Quimby?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Harriet_Quimby"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Harriet_Quimby",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Harriet_Quimby",
+              "edit": "https://en.m.wikipedia.org/wiki/Harriet_Quimby?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Harriet_Quimby"
+            }
+          },
+          "extract": "Harriet Quimby was an American pioneering aviator, journalist, and film screenwriter. In 1911, she became the first woman in the United States to receive a pilot's license and in 1912 the first woman to fly across the English Channel. Although Quimby died at the age of 37 in a flying accident, she strongly influenced the role of women in aviation.",
+          "extract_html": "<p><b>Harriet Quimby</b> was an American pioneering aviator, journalist, and film screenwriter. In 1911, she became the first woman in the United States to receive a pilot's license and in 1912 the first woman to fly across the English Channel. Although Quimby died at the age of 37 in a flying accident, she strongly influenced the role of women in aviation.</p>",
+          "normalizedtitle": "Harriet Quimby"
+        },
+        {
+          "type": "standard",
+          "title": "English_Channel",
+          "displaytitle": "<span class=\"mw-page-title-main\">English Channel</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q34640",
+          "titles": {
+            "canonical": "English_Channel",
+            "normalized": "English Channel",
+            "display": "<span class=\"mw-page-title-main\">English Channel</span>"
+          },
+          "pageid": 9230,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/English_Channel_Satellite.jpg/320px-English_Channel_Satellite.jpg",
+            "width": 320,
+            "height": 168
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/7/7a/English_Channel_Satellite.jpg",
+            "width": 1893,
+            "height": 991
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1283544194",
+          "tid": "f34178ed-0f7c-11f0-b96f-ee32df94f53a",
+          "timestamp": "2025-04-02T04:42:58Z",
+          "description": "Body of water between Great Britain and France",
+          "description_source": "local",
+          "coordinates": {
+            "lat": 50.2,
+            "lon": -2
+          },
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/English_Channel",
+              "revisions": "https://en.wikipedia.org/wiki/English_Channel?action=history",
+              "edit": "https://en.wikipedia.org/wiki/English_Channel?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:English_Channel"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/English_Channel",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/English_Channel",
+              "edit": "https://en.m.wikipedia.org/wiki/English_Channel?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:English_Channel"
+            }
+          },
+          "extract": "The English Channel, also known as the Channel, is an arm of the Atlantic Ocean that separates Southern England from northern France. It links to the southern part of the North Sea by the Strait of Dover at its northeastern end. It is the busiest shipping area in the world.",
+          "extract_html": "<p>The <b>English Channel</b>, also known as <b>the Channel</b>, is an arm of the Atlantic Ocean that separates Southern England from northern France. It links to the southern part of the North Sea by the Strait of Dover at its northeastern end. It is the busiest shipping area in the world.</p>",
+          "normalizedtitle": "English Channel"
+        }
+      ],
+      "year": 1912
+    },
+    {
+      "text": "Slavery in Washington, D.C., ended when the District of Columbia Compensated Emancipation Act became law.",
+      "pages": [
+        {
+          "type": "standard",
+          "title": "Washington,_D.C.",
+          "displaytitle": "<span class=\"mw-page-title-main\">Washington, D.C.</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q61",
+          "titles": {
+            "canonical": "Washington,_D.C.",
+            "normalized": "Washington, D.C.",
+            "display": "<span class=\"mw-page-title-main\">Washington, D.C.</span>"
+          },
+          "pageid": 108956,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/National_Mall%2C_Lincoln_Memorial_04448v.jpg/330px-National_Mall%2C_Lincoln_Memorial_04448v.jpg",
+            "width": 320,
+            "height": 408
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/2/29/National_Mall%2C_Lincoln_Memorial_04448v.jpg",
+            "width": 2059,
+            "height": 2625
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1285833563",
+          "tid": "813561e7-1a6d-11f0-baa5-d41cae1a8efe",
+          "timestamp": "2025-04-16T02:50:07Z",
+          "description": "Capital city of the United States",
+          "description_source": "local",
+          "coordinates": {
+            "lat": 38.90472222,
+            "lon": -77.01638889
+          },
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Washington%2C_D.C.",
+              "revisions": "https://en.wikipedia.org/wiki/Washington%2C_D.C.?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Washington%2C_D.C.?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Washington%2C_D.C."
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Washington%2C_D.C.",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Washington%2C_D.C.",
+              "edit": "https://en.m.wikipedia.org/wiki/Washington%2C_D.C.?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Washington%2C_D.C."
+            }
+          },
+          "extract": "Washington, D.C., formally the District of Columbia and commonly known as Washington or D.C., is the capital city and federal district of the United States. The city is on the Potomac River, across from Virginia, and shares land borders with Maryland to its north and east. It was named after George Washington, the first president of the United States. The district is named for Columbia, the female personification of the nation.",
+          "extract_html": "<p><b>Washington, D.C.</b>, formally the <b>District of Columbia</b> and commonly known as <b>Washington</b> or <b>D.C.</b>, is the capital city and federal district of the United States. The city is on the Potomac River, across from Virginia, and shares land borders with Maryland to its north and east. It was named after George Washington, the first president of the United States. The district is named for Columbia, the female personification of the nation.</p>",
+          "normalizedtitle": "Washington, D.C."
+        },
+        {
+          "type": "standard",
+          "title": "District_of_Columbia_Compensated_Emancipation_Act",
+          "displaytitle": "<span class=\"mw-page-title-main\">District of Columbia Compensated Emancipation Act</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q5283407",
+          "titles": {
+            "canonical": "District_of_Columbia_Compensated_Emancipation_Act",
+            "normalized": "District of Columbia Compensated Emancipation Act",
+            "display": "<span class=\"mw-page-title-main\">District of Columbia Compensated Emancipation Act</span>"
+          },
+          "pageid": 32175613,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Great_Seal_of_the_United_States_%28obverse%29.svg/330px-Great_Seal_of_the_United_States_%28obverse%29.svg.png",
+            "width": 320,
+            "height": 320
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Great_Seal_of_the_United_States_%28obverse%29.svg/600px-Great_Seal_of_the_United_States_%28obverse%29.svg.png",
+            "width": 600,
+            "height": 600
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1285947097",
+          "tid": "d88129aa-1af9-11f0-a971-5eb4ba754ed9",
+          "timestamp": "2025-04-16T19:34:43Z",
+          "description": "1862 U.S. federal law ending slavery in DC",
+          "description_source": "local",
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/District_of_Columbia_Compensated_Emancipation_Act",
+              "revisions": "https://en.wikipedia.org/wiki/District_of_Columbia_Compensated_Emancipation_Act?action=history",
+              "edit": "https://en.wikipedia.org/wiki/District_of_Columbia_Compensated_Emancipation_Act?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:District_of_Columbia_Compensated_Emancipation_Act"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/District_of_Columbia_Compensated_Emancipation_Act",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/District_of_Columbia_Compensated_Emancipation_Act",
+              "edit": "https://en.m.wikipedia.org/wiki/District_of_Columbia_Compensated_Emancipation_Act?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:District_of_Columbia_Compensated_Emancipation_Act"
+            }
+          },
+          "extract": "An Act for the Release of certain Persons held to Service or Labor in the District of Columbia, 37th Cong., Sess. 2, ch. 54, 12 Stat. 376, known colloquially as the District of Columbia Compensated Emancipation Act or simply Compensated Emancipation Act, was a law that ended slavery in the District of Columbia, while providing slave owners who remained loyal to the United States in the then-ongoing Civil War to petition for compensation. Although not written by him, the act was signed by U.S. President Abraham Lincoln on April 16, 1862. April 16 is now celebrated in the city as Emancipation Day.",
+          "extract_html": "<p><b>An Act for the Release of certain Persons held to Service or Labor in the District of Columbia</b>, 37th Cong., Sess. 2, ch. 54, 12 Stat. <span class=\"external text\">376</span>, known colloquially as the <b>District of Columbia Compensated Emancipation Act</b> or simply <b>Compensated Emancipation Act</b>, was a law that ended slavery in the District of Columbia, while providing slave owners who remained loyal to the United States in the then-ongoing Civil War to petition for compensation. Although not written by him, the act was signed by U.S. President Abraham Lincoln on April 16, 1862. April 16 is now celebrated in the city as Emancipation Day.</p>",
+          "normalizedtitle": "District of Columbia Compensated Emancipation Act"
+        }
+      ],
+      "year": 1862
+    },
+    {
+      "text": "French Revolutionary Wars: Severely outnumbered French forces repulsed an Ottoman attack at the Battle of Mount Tabor in present-day Israel.",
+      "pages": [
+        {
+          "type": "standard",
+          "title": "French_Revolutionary_Wars",
+          "displaytitle": "<span class=\"mw-page-title-main\">French Revolutionary Wars</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q207318",
+          "titles": {
+            "canonical": "French_Revolutionary_Wars",
+            "normalized": "French Revolutionary Wars",
+            "display": "<span class=\"mw-page-title-main\">French Revolutionary Wars</span>"
+          },
+          "pageid": 233039,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/French_Revolutionary_Wars.jpg/330px-French_Revolutionary_Wars.jpg",
+            "width": 320,
+            "height": 720
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/9/9e/French_Revolutionary_Wars.jpg",
+            "width": 1280,
+            "height": 2880
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1285277718",
+          "tid": "27fcd492-17d0-11f0-abcc-d4a8555b9f92",
+          "timestamp": "2025-04-12T18:58:44Z",
+          "description": "1792–1802 series of conflicts between the French Republic and several European monarchies",
+          "description_source": "local",
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/French_Revolutionary_Wars",
+              "revisions": "https://en.wikipedia.org/wiki/French_Revolutionary_Wars?action=history",
+              "edit": "https://en.wikipedia.org/wiki/French_Revolutionary_Wars?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:French_Revolutionary_Wars"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/French_Revolutionary_Wars",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/French_Revolutionary_Wars",
+              "edit": "https://en.m.wikipedia.org/wiki/French_Revolutionary_Wars?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:French_Revolutionary_Wars"
+            }
+          },
+          "extract": "The French Revolutionary Wars were a series of sweeping military conflicts resulting from the French Revolution that lasted from 1792 until 1802. They pitted France against Great Britain, Austria, Prussia, Russia, and several other countries. The wars are divided into two periods: the War of the First Coalition (1792–1797) and the War of the Second Coalition (1798–1802). Initially confined to Europe, the fighting gradually assumed a global dimension. After a decade of constant warfare and aggressive diplomacy, France had conquered territories in the Italian peninsula, the Low Countries, and the Rhineland with its very large and powerful military which had been totally mobilized for war against most of Europe with mass conscription of the vast French population. French success in these conflicts ensured military occupation and the spread of revolutionary principles over much of Europe.",
+          "extract_html": "<p>The <b>French Revolutionary Wars</b> were a series of sweeping military conflicts resulting from the French Revolution that lasted from 1792 until 1802. They pitted France against Great Britain, Austria, Prussia, Russia, and several other countries. The wars are divided into two periods: the War of the First Coalition (1792–1797) and the War of the Second Coalition (1798–1802). Initially confined to Europe, the fighting gradually assumed a global dimension. After a decade of constant warfare and aggressive diplomacy, France had conquered territories in the Italian peninsula, the Low Countries, and the Rhineland with its very large and powerful military which had been totally mobilized for war against most of Europe with mass conscription of the vast French population. French success in these conflicts ensured military occupation and the spread of revolutionary principles over much of Europe.</p>",
+          "normalizedtitle": "French Revolutionary Wars"
+        },
+        {
+          "type": "standard",
+          "title": "Ottoman_Empire",
+          "displaytitle": "<span class=\"mw-page-title-main\">Ottoman Empire</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q12560",
+          "titles": {
+            "canonical": "Ottoman_Empire",
+            "normalized": "Ottoman Empire",
+            "display": "<span class=\"mw-page-title-main\">Ottoman Empire</span>"
+          },
+          "pageid": 22278,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Flag_of_the_Ottoman_Empire_%281844%E2%80%931922%29.svg/330px-Flag_of_the_Ottoman_Empire_%281844%E2%80%931922%29.svg.png",
+            "width": 320,
+            "height": 213
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Flag_of_the_Ottoman_Empire_%281844%E2%80%931922%29.svg/1200px-Flag_of_the_Ottoman_Empire_%281844%E2%80%931922%29.svg.png",
+            "width": 1200,
+            "height": 800
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1285821008",
+          "tid": "43c8e163-1a5d-11f0-a6ef-7a1d27662ede",
+          "timestamp": "2025-04-16T00:53:52Z",
+          "description": "Turkish empire (ca. 1299–1922)",
+          "description_source": "local",
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Ottoman_Empire",
+              "revisions": "https://en.wikipedia.org/wiki/Ottoman_Empire?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Ottoman_Empire?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Ottoman_Empire"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Ottoman_Empire",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Ottoman_Empire",
+              "edit": "https://en.m.wikipedia.org/wiki/Ottoman_Empire?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Ottoman_Empire"
+            }
+          },
+          "extract": "The Ottoman Empire, also called the Turkish Empire, was an imperial realm that controlled much of Southeast Europe, West Asia, and North Africa from the 14th to early 20th centuries; it also controlled parts of southeastern Central Europe, between the early 16th and early 18th centuries.",
+          "extract_html": "<p>The <b>Ottoman Empire</b>, also called the <b>Turkish Empire</b>, was an imperial realm that controlled much of Southeast Europe, West Asia, and North Africa from the 14th to early 20th centuries; it also controlled parts of southeastern Central Europe, between the early 16th and early 18th centuries.</p>",
+          "normalizedtitle": "Ottoman Empire"
+        },
+        {
+          "type": "standard",
+          "title": "Battle_of_Mount_Tabor_(1799)",
+          "displaytitle": "<span class=\"mw-page-title-main\">Battle of Mount Tabor (1799)</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q2420811",
+          "titles": {
+            "canonical": "Battle_of_Mount_Tabor_(1799)",
+            "normalized": "Battle of Mount Tabor (1799)",
+            "display": "<span class=\"mw-page-title-main\">Battle of Mount Tabor (1799)</span>"
+          },
+          "pageid": 7829066,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/La_Bataille_du_mont_Tabor%2C_en_Syrie%2C_le_27_germinal_an_VI_by_Louis_Fran%C3%A7ois_Lejeune_Salon_de_1804.jpg/330px-La_Bataille_du_mont_Tabor%2C_en_Syrie%2C_le_27_germinal_an_VI_by_Louis_Fran%C3%A7ois_Lejeune_Salon_de_1804.jpg",
+            "width": 320,
+            "height": 223
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/7/7b/La_Bataille_du_mont_Tabor%2C_en_Syrie%2C_le_27_germinal_an_VI_by_Louis_Fran%C3%A7ois_Lejeune_Salon_de_1804.jpg",
+            "width": 3100,
+            "height": 2156
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1285837434",
+          "tid": "6e717550-1a72-11f0-b733-dc12364e0cdb",
+          "timestamp": "2025-04-16T03:25:23Z",
+          "description": "Part of the French Campaign in Egypt and Syria",
+          "description_source": "local",
+          "coordinates": {
+            "lat": 32.6125,
+            "lon": 35.32666667
+          },
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Battle_of_Mount_Tabor_(1799)",
+              "revisions": "https://en.wikipedia.org/wiki/Battle_of_Mount_Tabor_(1799)?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Battle_of_Mount_Tabor_(1799)?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Battle_of_Mount_Tabor_(1799)"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Battle_of_Mount_Tabor_(1799)",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Battle_of_Mount_Tabor_(1799)",
+              "edit": "https://en.m.wikipedia.org/wiki/Battle_of_Mount_Tabor_(1799)?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Battle_of_Mount_Tabor_(1799)"
+            }
+          },
+          "extract": "The Battle of Mount Tabor was fought on 16 April 1799, between French forces commanded by Napoleon Bonaparte and General Jean-Baptiste Kléber, against an Ottoman Army under Abdullah Pasha al-Azm, ruler of Damascus. The battle was a consequence of the siege of Acre, in the later stages of the French Campaign in Egypt and Syria.",
+          "extract_html": "<p>The <b>Battle of Mount Tabor</b> was fought on 16 April 1799, between French forces commanded by Napoleon Bonaparte and General Jean-Baptiste Kléber, against an Ottoman Army under Abdullah Pasha al-Azm, ruler of Damascus. The battle was a consequence of the siege of Acre, in the later stages of the French Campaign in Egypt and Syria.</p>",
+          "normalizedtitle": "Battle of Mount Tabor (1799)"
+        }
+      ],
+      "year": 1799
+    },
+    {
+      "text": "A revolt of citizens in Toledo, Castile, opposed to the rule of the foreign-born Charles I began when the royal government attempted to unseat radical city councilors.",
+      "pages": [
+        {
+          "type": "standard",
+          "title": "Revolt_of_the_Comuneros",
+          "displaytitle": "<span class=\"mw-page-title-main\">Revolt of the Comuneros</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q151663",
+          "titles": {
+            "canonical": "Revolt_of_the_Comuneros",
+            "normalized": "Revolt of the Comuneros",
+            "display": "<span class=\"mw-page-title-main\">Revolt of the Comuneros</span>"
+          },
+          "pageid": 2358320,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Comuneros.jpg/330px-Comuneros.jpg",
+            "width": 320,
+            "height": 225
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/7/72/Comuneros.jpg",
+            "width": 6036,
+            "height": 4242
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1285975828",
+          "tid": "864efbb3-1b17-11f0-9430-c169032cfb25",
+          "timestamp": "2025-04-16T23:07:10Z",
+          "description": "1520 rebellion in Castile, Spain",
+          "description_source": "local",
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Revolt_of_the_Comuneros",
+              "revisions": "https://en.wikipedia.org/wiki/Revolt_of_the_Comuneros?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Revolt_of_the_Comuneros?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Revolt_of_the_Comuneros"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Revolt_of_the_Comuneros",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Revolt_of_the_Comuneros",
+              "edit": "https://en.m.wikipedia.org/wiki/Revolt_of_the_Comuneros?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Revolt_of_the_Comuneros"
+            }
+          },
+          "extract": "The Revolt of the Comuneros was an uprising by citizens of Castile against the rule of Charles I and his administration between 1520 and 1521. At its height, the rebels controlled the heart of Castile, ruling the cities of Valladolid, Tordesillas, and Toledo.",
+          "extract_html": "<p>The <b>Revolt of the Comuneros</b> was an uprising by citizens of Castile against the rule of Charles I and his administration between 1520 and 1521. At its height, the rebels controlled the heart of Castile, ruling the cities of Valladolid, Tordesillas, and Toledo.</p>",
+          "normalizedtitle": "Revolt of the Comuneros"
+        },
+        {
+          "type": "standard",
+          "title": "Toledo,_Spain",
+          "displaytitle": "<span class=\"mw-page-title-main\">Toledo, Spain</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q5836",
+          "titles": {
+            "canonical": "Toledo,_Spain",
+            "normalized": "Toledo, Spain",
+            "display": "<span class=\"mw-page-title-main\">Toledo, Spain</span>"
+          },
+          "pageid": 31360,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Toledo_%2837737041515%29.jpg/330px-Toledo_%2837737041515%29.jpg",
+            "width": 320,
+            "height": 240
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/6/65/Toledo_%2837737041515%29.jpg",
+            "width": 4608,
+            "height": 3456
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1285687534",
+          "tid": "4a017724-19b1-11f0-9689-b75efb412b51",
+          "timestamp": "2025-04-15T04:22:49Z",
+          "description": "City in Castilla–La Mancha, Spain",
+          "description_source": "local",
+          "coordinates": {
+            "lat": 39.85666667,
+            "lon": -4.02444444
+          },
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Toledo%2C_Spain",
+              "revisions": "https://en.wikipedia.org/wiki/Toledo%2C_Spain?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Toledo%2C_Spain?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Toledo%2C_Spain"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Toledo%2C_Spain",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Toledo%2C_Spain",
+              "edit": "https://en.m.wikipedia.org/wiki/Toledo%2C_Spain?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Toledo%2C_Spain"
+            }
+          },
+          "extract": "Toledo is a city and municipality of Spain, the capital of the province of Toledo and the de jure seat of the government and parliament of the autonomous community of Castilla–La Mancha.",
+          "extract_html": "<p><b>Toledo</b> is a city and municipality of Spain, the capital of the province of Toledo and the <i>de jure</i> seat of the government and parliament of the autonomous community of Castilla–La Mancha.</p>",
+          "normalizedtitle": "Toledo, Spain"
+        },
+        {
+          "type": "standard",
+          "title": "Charles_V,_Holy_Roman_Emperor",
+          "displaytitle": "<span class=\"mw-page-title-main\">Charles V, Holy Roman Emperor</span>",
+          "namespace": {
+            "id": 0,
+            "text": ""
+          },
+          "wikibase_item": "Q32500",
+          "titles": {
+            "canonical": "Charles_V,_Holy_Roman_Emperor",
+            "normalized": "Charles V, Holy Roman Emperor",
+            "display": "<span class=\"mw-page-title-main\">Charles V, Holy Roman Emperor</span>"
+          },
+          "pageid": 70716,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Portrait_of_Charles_V%2C_Holy_Roman_Emperor%2C_seated_%281500%E2%80%931558%29%2C_formerly_attributed_to_Titian_%28Alte_Pinakothek%2C_Munich%29.jpg/330px-Portrait_of_Charles_V%2C_Holy_Roman_Emperor%2C_seated_%281500%E2%80%931558%29%2C_formerly_attributed_to_Titian_%28Alte_Pinakothek%2C_Munich%29.jpg",
+            "width": 320,
+            "height": 538
+          },
+          "originalimage": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Portrait_of_Charles_V%2C_Holy_Roman_Emperor%2C_seated_%281500%E2%80%931558%29%2C_formerly_attributed_to_Titian_%28Alte_Pinakothek%2C_Munich%29.jpg",
+            "width": 1783,
+            "height": 3000
+          },
+          "lang": "en",
+          "dir": "ltr",
+          "revision": "1284941196",
+          "tid": "d9b2ea0f-1633-11f0-ac9d-ea1fd561a349",
+          "timestamp": "2025-04-10T17:47:20Z",
+          "description": "Holy Roman Emperor from 1519 to 1556",
+          "description_source": "local",
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Charles_V%2C_Holy_Roman_Emperor",
+              "revisions": "https://en.wikipedia.org/wiki/Charles_V%2C_Holy_Roman_Emperor?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Charles_V%2C_Holy_Roman_Emperor?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Charles_V%2C_Holy_Roman_Emperor"
+            },
+            "mobile": {
+              "page": "https://en.m.wikipedia.org/wiki/Charles_V%2C_Holy_Roman_Emperor",
+              "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Charles_V%2C_Holy_Roman_Emperor",
+              "edit": "https://en.m.wikipedia.org/wiki/Charles_V%2C_Holy_Roman_Emperor?action=edit",
+              "talk": "https://en.m.wikipedia.org/wiki/Talk:Charles_V%2C_Holy_Roman_Emperor"
+            }
+          },
+          "extract": "Charles V was Holy Roman Emperor and Archduke of Austria from 1519 to 1556, King of Spain from 1516 to 1556, and Lord of the Netherlands as titular Duke of Burgundy from 1506 to 1555. He was heir to and then head of the rising House of Habsburg. His dominions in Europe included the Holy Roman Empire, extending from Germany to northern Italy with rule over the Austrian hereditary lands and Burgundian Low Countries, and Spain with its possessions of the southern Italian kingdoms of Naples, Sicily and Sardinia. In the Americas, he oversaw the continuation of Spanish colonization and a short-lived German colonization. The personal union of the European and American territories he ruled was the first collection of realms labelled \"the empire on which the sun never sets\".",
+          "extract_html": "<p><b>Charles V</b> was Holy Roman Emperor and Archduke of Austria from 1519 to 1556, King of Spain from 1516 to 1556, and Lord of the Netherlands as titular Duke of Burgundy from 1506 to 1555. He was heir to and then head of the rising House of Habsburg. His dominions in Europe included the Holy Roman Empire, extending from Germany to northern Italy with rule over the Austrian hereditary lands and Burgundian Low Countries, and Spain with its possessions of the southern Italian kingdoms of Naples, Sicily and Sardinia. In the Americas, he oversaw the continuation of Spanish colonization and a short-lived German colonization. The personal union of the European and American territories he ruled was the first collection of realms labelled \"the empire on which the sun never sets\".</p>",
+          "normalizedtitle": "Charles V, Holy Roman Emperor"
+        }
+      ],
+      "year": 1520
+    }
+  ]
+}

@@ -10,6 +10,10 @@ import SwiftUI
 struct ExpandableCardView: View {
     var item: ExpandableItem
     var onToggle: () -> Void
+    var onImageTapped: (URL) -> Void
+    @State private var selectedPage = 0
+    @State private var isShowingFullImage = false
+    @StateObject private var viewModel = ExpandableListViewModel()
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -21,23 +25,68 @@ struct ExpandableCardView: View {
                     .rotationEffect(.degrees(item.isExpanded ? 180 : 0))
                     .animation(.easeInOut(duration: 0.25), value: item.isExpanded)
             }
-            .contentShape(Rectangle()) // Makes entire row tappable
+            .contentShape(Rectangle())
             .onTapGesture {
                 withAnimation {
+                    print("Tapped card titled: \(item.title)")
                     onToggle()
                 }
             }
 
             if item.isExpanded {
-                VStack(alignment: .leading, spacing: 4) {
-                    ForEach(item.children, id: \.self) { child in
-                        Text(child)
-                            .padding(.leading, 8)
-                            .font(.subheadline)
+                TabView(selection: $selectedPage) {
+                    ForEach(Array(item.pages.enumerated()), id: \.element.pageID) { index, page in
+                        ScrollView {
+                            VStack(alignment: .leading, spacing: 8) {
+                                if let extract = page.extract {
+                                    Text(extract)
+                                        .font(.subheadline)
+                                        .foregroundColor(.secondary)
+                                }
+
+                                if let imageUrl = page.thumbnail?.source, let url = URL(string: imageUrl) {
+                                    AsyncImage(url: url) { phase in
+                                        switch phase {
+                                        case .empty:
+                                            ProgressView()
+                                        case .success(let image):
+                                            image
+                                                .resizable()
+                                                .aspectRatio(contentMode: .fit)
+                                                .cornerRadius(10)
+                                                .onTapGesture {
+                                                    if let original = page.originalImage?.source,
+                                                           let url = URL(string: original) {
+                                                            print("Tapped image: \(url)")
+                                                            onImageTapped(url)
+                                                        }
+                                                }
+                                        case .failure:
+                                            Image(systemName: "photo")
+                                        @unknown default:
+                                            EmptyView()
+                                        }
+                                    }
+                                    .frame(height: 150)
+                                }
+                            }
+                            .padding()
+                        }
+                        .tag(index)
                     }
                 }
-                .padding(.top, 8)
-                .frame(maxWidth: .infinity, alignment: .leading)
+                .tabViewStyle(.page(indexDisplayMode: .never))
+                .frame(height: 300)
+
+
+                // Page indicator
+                HStack {
+                    Spacer()
+                    Text("\(selectedPage + 1) of \(item.pages.count)")
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                    Spacer()
+                }
             }
         }
         .padding()
@@ -45,5 +94,12 @@ struct ExpandableCardView: View {
         .cornerRadius(10)
         .shadow(radius: 2)
         .frame(maxWidth: .infinity, alignment: .leading)
+        .fullScreenCover(isPresented: $viewModel.isShowingFullImage) {
+            if let imageUrl = viewModel.selectedImageURL {
+                FullScreenImageView(imageUrl: imageUrl) {
+                    viewModel.isShowingFullImage = false
+                }
+            }
+        }
     }
 }
