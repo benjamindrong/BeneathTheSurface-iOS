@@ -14,7 +14,7 @@ struct ExpandableListView: View {
         ScrollView {
             VStack(spacing: 12) {
                 OnThisDayFormView { day, month in
-                    viewModel.loadOnThisDayData(month: month, day: day)
+                    viewModel.loadData(month: month, day: day)
                 }
                 ForEach(viewModel.items) { item in
                     ExpandableCardView(item: item) {

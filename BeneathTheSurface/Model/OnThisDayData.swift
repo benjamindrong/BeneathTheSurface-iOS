@@ -7,6 +7,20 @@
 
 import Foundation
 
+extension OnThisDayData {
+    func toExpandableItems() -> [ExpandableItem] {
+        return selected.map {
+            ExpandableItem(
+                title: $0.text,
+                detail: "\(String(describing: $0.year))",
+                pages: $0.pages,
+                isExpanded: false,
+                year: "\(String(describing: $0.year))"
+            )
+        }
+    }
+}
+
 struct OnThisDayData: Codable {
     let selected: [Selected]
     let timestamp: Int64?
@@ -17,14 +31,7 @@ struct OnThisDayData: Codable {
     static let fullUrl = "https://en.wikipedia.org/api/rest_v1/feed/onthisday/selected"
     
     // Function to map OnThisDayData to ExpandableItems
-    func toExpandableItems() -> [ExpandableItem] {
-        return selected.map { selected in
-            ExpandableItem(
-                title: "\(selected.year ?? 0): \(selected.text)", // Set the title as "year: text"
-                pages: selected.pages
-            )
-        }
-    }
+    
 }
 
 struct OnThisDayRequest {
