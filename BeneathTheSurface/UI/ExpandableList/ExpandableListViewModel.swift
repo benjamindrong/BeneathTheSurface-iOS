@@ -14,6 +14,7 @@ class ExpandableListViewModel: ObservableObject {
     @Published var isShowingFullImage = false
     @Published var aiFormSuccess: Bool = false
     @Published var aiFormError: String?
+    @Published var isLoading: Bool = false
 
     private var cancellables = Set<AnyCancellable>()
     private let repository = OnThisDayRepository()
@@ -26,9 +27,11 @@ class ExpandableListViewModel: ObservableObject {
     }
 
     func loadData(month: Int, day: Int) {
+        isLoading = true
+        
         let formattedDate = String(format: "%02d/%02d", month, day)
         let formData = AIFormData(
-            utcTimestamp: Date().timeIntervalSince1970 * 1000, // to milliseconds
+            utcTimestamp: Date().timeIntervalSince1970 * 1000,
             date: formattedDate,
             month: month,
             day: day,
@@ -39,9 +42,8 @@ class ExpandableListViewModel: ObservableObject {
         let onThisDayPublisher = repository.fetchOnThisDayData(month: month, day: day)
         let aiFormPublisher = aiRepository.sendFormData(formData)
 
-        // Load historical items first
         onThisDayPublisher
-            .sink(receiveCompletion: { completion in
+            .sink(receiveCompletion: { [weak self] completion in
                 if case let .failure(error) = completion {
                     print("❌ OnThisDay API failed: \(error)")
                 }
@@ -49,11 +51,11 @@ class ExpandableListViewModel: ObservableObject {
                 let historyItems = data.toExpandableItems()
                 DispatchQueue.main.async {
                     self?.items = historyItems
+                    self?.isLoading = false // done loading history data
                 }
             })
             .store(in: &cancellables)
 
-        // Add AI Insights when ready, inserting it at the top of the list
         aiFormPublisher
             .sink(receiveCompletion: { [weak self] completion in
                 if case let .failure(error) = completion {
@@ -61,9 +63,8 @@ class ExpandableListViewModel: ObservableObject {
                     self?.aiFormError = "Failed to send AIFormData"
                 }
             }, receiveValue: { [weak self] chatData in
-                let aiItem = chatData.toExpandableItem()
                 DispatchQueue.main.async {
-                    self?.items.insert(aiItem, at: 0)
+                    self?.items.insert(chatData.toExpandableItem(), at: 0)
                     self?.aiFormSuccess = true
                 }
             })
