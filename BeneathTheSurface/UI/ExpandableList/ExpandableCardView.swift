@@ -33,7 +33,7 @@ struct ExpandableCardView: View {
 
             if item.isExpanded {
                 TabView(selection: $selectedPage) {
-                    ForEach(Array(item.pages.enumerated()), id: \.element.pageID) { index, page in
+                    ForEach(Array((item.pages?.enumerated())!), id: \.element.pageID) { index, page in
                         ScrollView {
                             VStack(alignment: .leading, spacing: 8) {
                                 if let extract = page.extract {
@@ -78,7 +78,7 @@ struct ExpandableCardView: View {
                 // Page indicator
                 HStack {
                     Spacer()
-                    Text("\(selectedPage + 1) of \(item.pages.count)")
+                    Text("\(selectedPage + 1) of \(item.pages?.count ?? 1)")
                         .font(.caption)
                         .foregroundColor(.gray)
                     Spacer()

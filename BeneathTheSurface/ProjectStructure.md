@@ -14,6 +14,7 @@
 │       └── FullScreenImageView.swift
 ├── Model
 │   ├── ExapandableItem.swift
-│   └── OnThisDayData.swift
+│   ├── OnThisDayData.swift
+│   └── AIFormData.swift
 ├── BeneathTheSurfaceApp.swift
 ├── Assets

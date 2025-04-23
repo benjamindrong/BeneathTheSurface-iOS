@@ -10,6 +10,8 @@ import Foundation
 struct ExpandableItem: Identifiable {
     let id = UUID()
     let title: String
-    var pages: [Page]
-    var isExpanded = false
+    let detail: String?
+    let pages: [Page]?
+    var isExpanded: Bool = false
+    let year: String?
 }
