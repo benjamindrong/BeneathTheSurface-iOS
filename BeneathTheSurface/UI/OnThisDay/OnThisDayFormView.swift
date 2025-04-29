@@ -13,47 +13,50 @@ struct OnThisDayFormView: View {
     @State private var errorMessage: String?
 
     let onSubmit: (_ day: Int, _ month: Int) -> Void
+    
+    @Environment(\.fontTheme) var fontTheme
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
             // Month Picker
-            Picker("Month", selection: Binding(
+            Picker("month", selection: Binding(
                 get: { selectedMonth ?? 1 },
                 set: { selectedMonth = $0 }
             )) {
                 ForEach(1...12, id: \.self) { month in
-                    Text(String(format: "%02d", month)).tag(month)
+                    Text(String(format: "%02d", month)).font(fontTheme.title).tag(month)
                 }
             }
-            .pickerStyle(.menu)
+            .pickerStyle(.wheel)
             .frame(maxWidth: .infinity, alignment: .leading)
 
             // Day Picker
-            Picker("Day", selection: Binding(
+            Picker("day", selection: Binding(
                 get: { selectedDay ?? 1 },
                 set: { selectedDay = $0 }
             )) {
                 ForEach(1...31, id: \.self) { day in
-                    Text(String(format: "%02d", day)).tag(day)
+                    Text(String(format: "%02d", day)).font(fontTheme.title).tag(day)
+                        
                 }
             }
-            .pickerStyle(.menu)
+            .pickerStyle(.wheel)
             .frame(maxWidth: .infinity, alignment: .leading)
 
             // Error message
             if let error = errorMessage {
                 Text(error)
                     .foregroundColor(.red)
-                    .font(.caption)
+                    .font(fontTheme.caption)
             }
 
             // Submit Button
             HStack {
                 Spacer()
-                Button("Get History") {
+                Button("get history") {
                     validateAndSubmit()
                 }
-                .buttonStyle(.borderedProminent)
+                .buttonStyle(.borderedProminent).font(fontTheme.title)
             }
         }
         .padding()
@@ -61,17 +64,17 @@ struct OnThisDayFormView: View {
 
     private func validateAndSubmit() {
         guard let month = selectedMonth, let day = selectedDay else {
-            errorMessage = "Both fields are required."
+            errorMessage = "both fields are required."
             return
         }
 
         guard (1...12).contains(month) else {
-            errorMessage = "Month must be between 1 and 12."
+            errorMessage = "month must be between 1 and 12."
             return
         }
 
         guard (1...31).contains(day) else {
-            errorMessage = "Day must be between 1 and 31."
+            errorMessage = "day must be between 1 and 31."
             return
         }
 

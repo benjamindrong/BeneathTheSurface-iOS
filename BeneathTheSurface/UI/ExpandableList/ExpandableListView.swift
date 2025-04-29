@@ -10,6 +10,9 @@ import SwiftUI
 struct ExpandableListView: View {
     @StateObject private var viewModel = ExpandableListViewModel()
     
+    
+    @Environment(\.fontTheme) var fontTheme
+    
     var body: some View {
         ZStack {
             ScrollView {
@@ -34,6 +37,7 @@ struct ExpandableListView: View {
                     ProgressView("Loading...")
                         .progressViewStyle(CircularProgressViewStyle())
                         .scaleEffect(2)
+                        .font(fontTheme.title)
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(Color(.systemBackground).opacity(0.8))

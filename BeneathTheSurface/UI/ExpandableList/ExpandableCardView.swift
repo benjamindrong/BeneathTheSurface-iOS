@@ -14,11 +14,13 @@ struct ExpandableCardView: View {
     @State private var selectedPage = 0
     @State private var isShowingFullImage = false
 
+    @Environment(\.fontTheme) var fontTheme
+    
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
                 Text(item.title)
-                    .font(.headline)
+                    .font(fontTheme.title)
                 Spacer()
                 Image(systemName: "chevron.down")
                     .rotationEffect(.degrees(item.isExpanded ? 180 : 0))
@@ -38,8 +40,8 @@ struct ExpandableCardView: View {
                             VStack(alignment: .leading, spacing: 8) {
                                 if let extract = page.extract {
                                     Text(extract)
-                                        .font(.subheadline)
-                                        .foregroundColor(.secondary)
+                                        .font(fontTheme.title)
+//                                        .foregroundColor(.secondary)
                                 }
 
                                 if let imageUrl = page.thumbnail?.source, let url = URL(string: imageUrl) {
@@ -79,8 +81,8 @@ struct ExpandableCardView: View {
                 HStack {
                     Spacer()
                     Text("\(selectedPage + 1) of \(item.pages?.count ?? 1)")
-                        .font(.caption)
-                        .foregroundColor(.gray)
+                        .font(fontTheme.caption)
+//                        .foregroundColor(.gray)
                     Spacer()
                 }
             }
