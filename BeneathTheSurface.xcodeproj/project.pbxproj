@@ -24,7 +24,6 @@
 		BC474C472DB85D04000C752B /* AIFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC474C462DB85D04000C752B /* AIFormData.swift */; };
 		BC474C492DB85F12000C752B /* AIFormDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC474C482DB85F12000C752B /* AIFormDataRepository.swift */; };
 		BC474C4B2DB8616E000C752B /* ChatCompletionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC474C4A2DB8616E000C752B /* ChatCompletionData.swift */; };
-		BC9620522DC3E0D50079FE9A /* result_overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9620512DC3E0D50079FE9A /* result_overlay.png */; };
 		BCAF85E52DB3E84B00A4E18F /* OnThisDayFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF85E42DB3E84B00A4E18F /* OnThisDayFormView.swift */; };
 		BCAF85E82DB3EFEA00A4E18F /* OnThisDayRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF85E72DB3EFEA00A4E18F /* OnThisDayRepository.swift */; };
 		BCC3B4172DC1412800686261 /* ApexFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCC3B4162DC1412800686261 /* ApexFont.ttf */; };
@@ -71,7 +70,6 @@
 		BC474C4A2DB8616E000C752B /* ChatCompletionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCompletionData.swift; sourceTree = "<group>"; };
 		BC474C542DB88BD1000C752B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BC6078CD2DB327D000F81BB0 /* ProjectStructure.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ProjectStructure.md; sourceTree = "<group>"; };
-		BC9620512DC3E0D50079FE9A /* result_overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = result_overlay.png; path = Assets.xcassets/result_overlay.png; sourceTree = "<group>"; };
 		BCAF85E42DB3E84B00A4E18F /* OnThisDayFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnThisDayFormView.swift; sourceTree = "<group>"; };
 		BCAF85E72DB3EFEA00A4E18F /* OnThisDayRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnThisDayRepository.swift; sourceTree = "<group>"; };
 		BCC3B4162DC1412800686261 /* ApexFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ApexFont.ttf; sourceTree = "<group>"; };
@@ -134,7 +132,6 @@
 				BC44D3D92DAEB0EA00FADDE9 /* Model */,
 				BC133B4F2DAD87A900D1A287 /* BeneathTheSurfaceApp.swift */,
 				BC133B532DAD87AB00D1A287 /* Assets.xcassets */,
-				BC9620512DC3E0D50079FE9A /* result_overlay.png */,
 				BC133B552DAD87AB00D1A287 /* Preview Content */,
 				BC6078CD2DB327D000F81BB0 /* ProjectStructure.md */,
 			);
@@ -336,7 +333,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC9620522DC3E0D50079FE9A /* result_overlay.png in Resources */,
 				BC1F5C702DB15FBB0096858F /* sample_onthisday.json in Resources */,
 				BC133B572DAD87AB00D1A287 /* Preview Assets.xcassets in Resources */,
 				BCC3B4172DC1412800686261 /* ApexFont.ttf in Resources */,
