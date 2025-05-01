@@ -17,79 +17,91 @@ struct ExpandableCardView: View {
     @Environment(\.fontTheme) var fontTheme
     
     var body: some View {
-        VStack(alignment: .leading) {
-            HStack {
-                Text(item.title)
-                    .font(fontTheme.title)
-                Spacer()
-                Image(systemName: "chevron.down")
-                    .rotationEffect(.degrees(item.isExpanded ? 180 : 0))
-                    .animation(.easeInOut(duration: 0.25), value: item.isExpanded)
+        ZStack {
+            // Dynamically sized background overlay
+            GeometryReader { geometry in
+                Image("result_overlay")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: geometry.size.width, height: geometry.size.height)
+                    .opacity(0.25)
+                    .clipped()
+                    .cornerRadius(10)
             }
-            .contentShape(Rectangle())
-            .onTapGesture {
-                withAnimation {
-                    onToggle()
+
+            // Content sits on top of overlay
+            VStack(alignment: .leading) {
+                HStack {
+                    Text(item.title)
+                        .font(fontTheme.title)
+                    Spacer()
+                    Image(systemName: "chevron.down")
+                        .rotationEffect(.degrees(item.isExpanded ? 180 : 0))
+                        .animation(.easeInOut(duration: 0.25), value: item.isExpanded)
                 }
-            }
+                .contentShape(Rectangle())
+                .onTapGesture {
+                    withAnimation {
+                        onToggle()
+                    }
+                }
 
-            if item.isExpanded {
-                TabView(selection: $selectedPage) {
-                    ForEach(Array((item.pages?.enumerated())!), id: \.element.pageID) { index, page in
-                        ScrollView {
-                            VStack(alignment: .leading, spacing: 8) {
-                                if let extract = page.extract {
-                                    Text(extract)
-                                        .font(fontTheme.title)
-//                                        .foregroundColor(.secondary)
-                                }
+                if item.isExpanded {
+                    TabView(selection: $selectedPage) {
+                        ForEach(Array((item.pages?.enumerated())!), id: \.element.pageID) { index, page in
+                            ScrollView {
+                                VStack(alignment: .leading, spacing: 8) {
+                                    if let extract = page.extract {
+                                        Text(extract)
+                                            .font(fontTheme.title)
+                                    }
 
-                                if let imageUrl = page.thumbnail?.source, let url = URL(string: imageUrl) {
-                                    AsyncImage(url: url) { phase in
-                                        switch phase {
-                                        case .empty:
-                                            ProgressView()
-                                        case .success(let image):
-                                            image
-                                                .resizable()
-                                                .aspectRatio(contentMode: .fit)
-                                                .cornerRadius(10)
-                                                .onTapGesture {
-                                                    if let original = page.originalImage?.source,
+                                    if let imageUrl = page.thumbnail?.source, let url = URL(string: imageUrl) {
+                                        AsyncImage(url: url) { phase in
+                                            switch phase {
+                                            case .empty:
+                                                ProgressView()
+                                            case .success(let image):
+                                                image
+                                                    .resizable()
+                                                    .aspectRatio(contentMode: .fit)
+                                                    .cornerRadius(10)
+                                                    .onTapGesture {
+                                                        if let original = page.originalImage?.source,
                                                            let url = URL(string: original) {
                                                             onImageTapped(url)
                                                         }
-                                                }
-                                        case .failure:
-                                            Image(systemName: "photo")
-                                        @unknown default:
-                                            EmptyView()
+                                                    }
+                                            case .failure:
+                                                Image(systemName: "photo")
+                                            @unknown default:
+                                                EmptyView()
+                                            }
                                         }
+                                        .frame(height: 150)
                                     }
-                                    .frame(height: 150)
                                 }
+                                .padding()
                             }
-                            .padding()
+                            .tag(index)
                         }
-                        .tag(index)
+                    }
+                    .tabViewStyle(.page(indexDisplayMode: .never))
+                    .frame(height: 300)
+
+                    HStack {
+                        Spacer()
+                        Text("\(selectedPage + 1) of \(item.pages?.count ?? 1)")
+                            .font(fontTheme.caption)
+                        Spacer()
                     }
                 }
-                .tabViewStyle(.page(indexDisplayMode: .never))
-                .frame(height: 300)
-
-                // Page indicator
-                HStack {
-                    Spacer()
-                    Text("\(selectedPage + 1) of \(item.pages?.count ?? 1)")
-                        .font(fontTheme.caption)
-//                        .foregroundColor(.gray)
-                    Spacer()
-                }
             }
+            .padding()
         }
-        .padding()
-        .background(Color(.secondarySystemBackground))
+        .background(Color.clear)
         .cornerRadius(10)
         .shadow(radius: 2)
     }
+
 }

@@ -17,7 +17,7 @@ struct ExpandableListView: View {
         ZStack {
             ScrollView {
                 VStack(spacing: 12) {
-                    OnThisDayFormView { day, month in
+                    OnThisDayFormView { day, month, year in
                         viewModel.loadData(month: month, day: day)
                     }
                     ForEach(viewModel.items) { item in
@@ -53,7 +53,4 @@ struct ExpandableListView: View {
             }
         }
     }
-}
-#Preview {
-    ExpandableListView()
 }
