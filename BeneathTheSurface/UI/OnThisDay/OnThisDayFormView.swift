@@ -1,10 +1,3 @@
-//
-//  OnThisDayFormView.swift
-//  BeneathTheSurface
-//
-//  Created by Benjamin Drong on 4/19/25.
-//
-
 import SwiftUI
 
 struct OnThisDayFormView: View {
@@ -29,12 +22,12 @@ struct OnThisDayFormView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .onChange(of: selectedMonth) { newMonth in
                 // Adjust the selected day when the month changes
-                selectedDay = min(selectedDay, daysInMonth(for: selectedMonth))
+                selectedDay = min(selectedDay, daysInMonth(for: selectedMonth, year: selectedYear))
             }
 
             // Day Picker
             Picker("Day", selection: $selectedDay) {
-                ForEach(1...daysInMonth(for: selectedMonth), id: \.self) { day in
+                ForEach(1...daysInMonth(for: selectedMonth, year: selectedYear), id: \.self) { day in
                     Text(String(format: "%02d", day)).font(fontTheme.title).tag(day)
                 }
             }
@@ -78,18 +71,16 @@ struct OnThisDayFormView: View {
         selectedYear = calendar.component(.year, from: currentDate)
     }
 
-    // Function to calculate number of days in the selected month
-    private func daysInMonth(for month: Int) -> Int {
-        switch month {
-        case 1, 3, 5, 7, 8, 10, 12: // Months with 31 days
-            return 31
-        case 4, 6, 9, 11: // Months with 30 days
-            return 30
-        case 2: // February, always assume 29 days
-            return 29
-        default:
-            return 30
+    // Function to calculate number of days in the selected month using Calendar
+    private func daysInMonth(for month: Int, year: Int) -> Int {
+        let calendar = Calendar.current
+        let dateComponents = DateComponents(year: year, month: month)
+        if let date = calendar.date(from: dateComponents) {
+            // Calculate the range of days for the selected month
+            let range = calendar.range(of: .day, in: .month, for: date)
+            return range?.count ?? 31 // Default to 31 if something goes wrong
         }
+        return 31
     }
 
     // Function to validate and submit
@@ -99,7 +90,7 @@ struct OnThisDayFormView: View {
             return
         }
 
-        guard (1...daysInMonth(for: selectedMonth)).contains(selectedDay) else {
+        guard (1...daysInMonth(for: selectedMonth, year: selectedYear)).contains(selectedDay) else {
             errorMessage = "Day must be valid for the selected month."
             return
         }
