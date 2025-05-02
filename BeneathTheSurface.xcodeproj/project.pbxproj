@@ -28,6 +28,7 @@
 		BCAF85E82DB3EFEA00A4E18F /* OnThisDayRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF85E72DB3EFEA00A4E18F /* OnThisDayRepository.swift */; };
 		BCC3B4172DC1412800686261 /* ApexFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCC3B4162DC1412800686261 /* ApexFont.ttf */; };
 		BCC3B41A2DC142BE00686261 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC3B4192DC142BE00686261 /* Font.swift */; };
+		BCE0DC2C2DC44970002CACEF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE0DC2B2DC44970002CACEF /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		BCAF85E72DB3EFEA00A4E18F /* OnThisDayRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnThisDayRepository.swift; sourceTree = "<group>"; };
 		BCC3B4162DC1412800686261 /* ApexFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ApexFont.ttf; sourceTree = "<group>"; };
 		BCC3B4192DC142BE00686261 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		BCE0DC2B2DC44970002CACEF /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				BCC3B4192DC142BE00686261 /* Font.swift */,
+				BCE0DC2B2DC44970002CACEF /* Color.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				BC1F5C692DB13FFE0096858F /* OnThisDayData.swift in Sources */,
 				BC474C4B2DB8616E000C752B /* ChatCompletionData.swift in Sources */,
 				BCAF85E82DB3EFEA00A4E18F /* OnThisDayRepository.swift in Sources */,
+				BCE0DC2C2DC44970002CACEF /* Color.swift in Sources */,
 				BC1F5C742DB16BE90096858F /* FullScreenImageView.swift in Sources */,
 				BCAF85E52DB3E84B00A4E18F /* OnThisDayFormView.swift in Sources */,
 				BC474C472DB85D04000C752B /* AIFormData.swift in Sources */,

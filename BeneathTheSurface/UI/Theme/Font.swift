@@ -12,7 +12,7 @@ struct FontTheme {
     let title: Font
     let body: Font
     let caption: Font
-    // Add more as needed
+    let textColor: Color
 }
 
 extension FontTheme {
@@ -20,12 +20,13 @@ extension FontTheme {
         largeTitle: .custom("ApexCoreTechs", size: 34),
         title: .custom("ApexCoreTechs", size: 24),
         body: .custom("ApexCoreTechs", size: 17),
-        caption: .custom("ApexCoreTechs", size: 13)
+        caption: .custom("ApexCoreTechs", size: 13),
+        textColor: Color("DarkSlateBlue")
     )
 }
 
 private struct FontThemeKey: EnvironmentKey {
-    static let defaultValue: FontTheme = .apex // Fallback if none injected
+    static let defaultValue: FontTheme = .apex
 }
 
 extension EnvironmentValues {

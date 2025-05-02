@@ -34,6 +34,7 @@ struct ExpandableCardView: View {
                 HStack {
                     Text(item.title)
                         .font(fontTheme.title)
+                        .foregroundColor(fontTheme.textColor)
                     Spacer()
                     Image(systemName: "chevron.down")
                         .rotationEffect(.degrees(item.isExpanded ? 180 : 0))
@@ -54,6 +55,7 @@ struct ExpandableCardView: View {
                                     if let extract = page.extract {
                                         Text(extract)
                                             .font(fontTheme.title)
+                                            .foregroundColor(fontTheme.textColor)
                                     }
 
                                     if let imageUrl = page.thumbnail?.source, let url = URL(string: imageUrl) {
@@ -93,6 +95,7 @@ struct ExpandableCardView: View {
                         Spacer()
                         Text("\(selectedPage + 1) of \(item.pages?.count ?? 1)")
                             .font(fontTheme.caption)
+                            .foregroundColor(fontTheme.textColor)
                         Spacer()
                     }
                 }
