@@ -9,6 +9,7 @@ struct OnThisDayFormView: View {
     let onSubmit: (_ day: Int, _ month: Int, _ year: Int) -> Void
     
     @Environment(\.fontTheme) var fontTheme
+    @Environment(\.colorScheme) var systemColorScheme
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {

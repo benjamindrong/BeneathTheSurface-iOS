@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct BeneathTheSurfaceApp: App {
+    @Environment(\.colorScheme) var systemColorScheme
+    
     var body: some Scene {
             WindowGroup {
                 ExpandableListView()
+                    .environment(\.colorTheme,
+                                 systemColorScheme == .dark ? .dark : .light)
             }
         }
 }
