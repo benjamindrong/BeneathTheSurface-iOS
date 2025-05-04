@@ -10,11 +10,12 @@ import SwiftUI
 struct ExpandableListView: View {
     @StateObject private var viewModel = ExpandableListViewModel()
     
-    
+    @Environment(\.colorTheme) var colorTheme
     @Environment(\.fontTheme) var fontTheme
     
     var body: some View {
         ZStack {
+            colorTheme.background.ignoresSafeArea()
             ScrollView {
                 VStack(spacing: 12) {
                     OnThisDayFormView { day, month, year in
@@ -27,6 +28,7 @@ struct ExpandableListView: View {
                             viewModel.selectedImageURL = url
                             viewModel.isShowingFullImage = true
                         }
+                        .background(colorTheme.surface)
                     }
                 }
                 .padding(.horizontal)
