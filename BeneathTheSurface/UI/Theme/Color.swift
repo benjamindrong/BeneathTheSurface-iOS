@@ -16,7 +16,7 @@ struct ColorTheme {
 
 extension ColorTheme {
     static let light = ColorTheme(
-        background: Color("GreyBackground"),
+        background: Color("LightBlueGreyBackground"),
         surface: Color("Ivory"),
         primary: Color.blue,
         onPrimary: .white,
@@ -24,7 +24,7 @@ extension ColorTheme {
     )
 
     static let dark = ColorTheme(
-        background: Color("GreyBackground"),
+        background: Color("LightBlueGreyBackground"),
         surface: Color("Ivory"),
         primary: Color.blue,
         onPrimary: .white,
