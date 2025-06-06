@@ -16,7 +16,7 @@ struct OnThisDayFormView: View {
             // Month Picker
             Picker("Month", selection: $selectedMonth) {
                 ForEach(1...12, id: \.self) { month in
-                    Text(String(format: "%02d", month)).font(fontTheme.title).tag(month)
+                    Text(String(month)).font(fontTheme.title).tag(month)
                 }
             }
             .pickerStyle(.wheel)
@@ -29,7 +29,7 @@ struct OnThisDayFormView: View {
             // Day Picker
             Picker("Day", selection: $selectedDay) {
                 ForEach(1...daysInMonth(for: selectedMonth, year: selectedYear), id: \.self) { day in
-                    Text(String(format: "%02d", day)).font(fontTheme.title).tag(day)
+                    Text(String(day)).font(fontTheme.title).tag(day)
                 }
             }
             .pickerStyle(.wheel)

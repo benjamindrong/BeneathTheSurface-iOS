@@ -29,7 +29,7 @@ class ExpandableListViewModel: ObservableObject {
     func loadData(month: Int, day: Int) {
         isLoading = true
         
-        let formattedDate = String(format: "%02d/%02d", month, day)
+        let formattedDate = String("\(month)/\(day)")
         let formData = AIFormData(
             utcTimestamp: Date().timeIntervalSince1970 * 1000,
             date: formattedDate,
