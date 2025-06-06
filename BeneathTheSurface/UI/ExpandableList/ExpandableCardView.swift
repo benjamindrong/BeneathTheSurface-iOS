@@ -54,7 +54,7 @@ struct ExpandableCardView: View {
                                 VStack(alignment: .leading, spacing: 8) {
                                     if let extract = page.extract {
                                         Text(extract)
-                                            .font(fontTheme.title)
+                                            .font(fontTheme.body)
                                             .foregroundColor(fontTheme.textColor)
                                     }
 
@@ -91,12 +91,14 @@ struct ExpandableCardView: View {
                     .tabViewStyle(.page(indexDisplayMode: .never))
                     .frame(height: 300)
 
-                    HStack {
-                        Spacer()
-                        Text("\(selectedPage + 1) of \(item.pages?.count ?? 1)")
-                            .font(fontTheme.caption)
-                            .foregroundColor(fontTheme.textColor)
-                        Spacer()
+                    if (item.pages?.count ?? 1 > 1) {
+                        HStack {
+                            Spacer()
+                            Text("\(selectedPage + 1) of \(item.pages?.count ?? 1)")
+                                .font(fontTheme.caption)
+                                .foregroundColor(fontTheme.textColor)
+                            Spacer()
+                        }
                     }
                 }
             }

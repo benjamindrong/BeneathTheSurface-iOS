@@ -18,8 +18,8 @@ struct FontTheme {
 extension FontTheme {
     static let apex = FontTheme(
         largeTitle: .custom("ApexCoreTechs", size: 34),
-        title: .custom("ApexCoreTechs", size: 24),
-        body: .custom("ApexCoreTechs", size: 17),
+        title: .custom("ApexCoreTechs", size: 16),
+        body: .custom("ApexCoreTechs", size: 14),
         caption: .custom("ApexCoreTechs", size: 13),
         textColor: Color("DarkSlateBlue")
     )
