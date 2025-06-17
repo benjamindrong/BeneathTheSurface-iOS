@@ -1,4 +1,6 @@
 import SwiftUI
+import _AVKit_SwiftUI
+import AVFoundation
 
 struct OnThisDayFormView: View {
     @State private var selectedMonth: Int = 1
@@ -100,3 +102,69 @@ struct OnThisDayFormView: View {
         onSubmit(selectedDay, selectedMonth, selectedYear)
     }
 }
+
+//struct VideoLoadingIndicator: View {
+//    let isLoading: Bool
+//    let itemsLoaded: Bool
+//    let onVideoComplete: () -> Void
+//
+//    @State private var player: AVPlayer? = nil
+//    @State private var showVideo: Bool = true
+//    @State private var observerAdded = false
+//
+//    var body: some View {
+//        VStack {
+//            if showVideo {
+//                if let player = player {
+//                    VideoPlayer(player: player)
+//                        .onAppear {
+//                            if isLoading {
+//                                player.seek(to: .zero)
+//                                player.rate = 2.0 // 2x speed
+//                                player.play()
+//
+//                                // Add observer only once
+//                                if !observerAdded {
+//                                    NotificationCenter.default.addObserver(
+//                                        forName: .AVPlayerItemDidPlayToEndTime,
+//                                        object: player.currentItem,
+//                                        queue: .main
+//                                    ) { _ in
+//                                        showVideo = false
+//                                        onVideoComplete()
+//                                    }
+//                                    observerAdded = true
+//                                }
+//                            }
+//                        }
+//                        .frame(height: 200)
+//                }
+//            } else {
+//                // Static image placeholder
+//                Image("loading_placeholder") // Add a static image to Assets
+//                    .resizable()
+//                    .scaledToFit()
+//                    .frame(height: 200)
+//            }
+//        }
+//        .onChange(of: isLoading) { newValue in
+//            if newValue {
+//                showVideo = true
+//                setupPlayer()
+//            }
+//        }
+//        .onAppear {
+//            if isLoading {
+//                setupPlayer()
+//            }
+//        }
+//    }
+//
+//    private func setupPlayer() {
+//        if let url = Bundle.main.url(forResource: "loading_animation", withExtension: "mov") {
+//            let item = AVPlayerItem(url: url)
+//            player = AVPlayer(playerItem: item)
+//            player?.actionAtItemEnd = .pause
+//        }
+//    }
+//}

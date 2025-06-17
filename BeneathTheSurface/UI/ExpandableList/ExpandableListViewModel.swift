@@ -15,6 +15,8 @@ class ExpandableListViewModel: ObservableObject {
     @Published var aiFormSuccess: Bool = false
     @Published var aiFormError: String?
     @Published var isLoading: Bool = false
+    @Published var aiLoadingComplete: Bool = false
+
 
     private var cancellables = Set<AnyCancellable>()
     private let repository = OnThisDayRepository()
@@ -28,6 +30,7 @@ class ExpandableListViewModel: ObservableObject {
 
     func loadData(month: Int, day: Int) {
         isLoading = true
+        aiLoadingComplete = false
         
         let formattedDate = String("\(month)/\(day)")
         let formData = AIFormData(
@@ -40,34 +43,30 @@ class ExpandableListViewModel: ObservableObject {
         )
 
         let onThisDayPublisher = repository.fetchOnThisDayData(month: month, day: day)
-        let aiFormPublisher = aiRepository.sendFormData(formData)
+           let aiFormPublisher = aiRepository.sendFormData(formData)
 
-        onThisDayPublisher
-            .sink(receiveCompletion: { [weak self] completion in
-                if case let .failure(error) = completion {
-                    print("❌ OnThisDay API failed: \(error)")
-                }
-            }, receiveValue: { [weak self] data in
-                let historyItems = data.toExpandableItems()
-                DispatchQueue.main.async {
-                    self?.items = historyItems
-                    self?.isLoading = false // done loading history data
-                }
-            })
-            .store(in: &cancellables)
+           onThisDayPublisher
+               .sink(receiveCompletion: { [weak self] completion in
+                   // handle failure
+               }, receiveValue: { [weak self] data in
+                   DispatchQueue.main.async {
+                       self?.items = data.toExpandableItems()
+                       self?.isLoading = false
+                   }
+               })
+               .store(in: &cancellables)
 
-        aiFormPublisher
-            .sink(receiveCompletion: { [weak self] completion in
-                if case let .failure(error) = completion {
-                    print("❌ AIFormData API failed: \(error)")
-                    self?.aiFormError = "Failed to send AIFormData"
-                }
-            }, receiveValue: { [weak self] chatData in
-                DispatchQueue.main.async {
-                    self?.items.insert(chatData.toExpandableItem(), at: 0)
-                    self?.aiFormSuccess = true
-                }
-            })
-            .store(in: &cancellables)
+           aiFormPublisher
+               .sink(receiveCompletion: { [weak self] completion in
+                   DispatchQueue.main.async {
+                       self?.aiLoadingComplete = true
+                   }
+               }, receiveValue: { [weak self] chatData in
+                   DispatchQueue.main.async {
+                       self?.items.insert(chatData.toExpandableItem(), at: 0)
+                       self?.aiFormSuccess = true
+                   }
+               })
+               .store(in: &cancellables)
     }
 }

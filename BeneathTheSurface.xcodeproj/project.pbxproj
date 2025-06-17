@@ -24,6 +24,7 @@
 		BC474C472DB85D04000C752B /* AIFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC474C462DB85D04000C752B /* AIFormData.swift */; };
 		BC474C492DB85F12000C752B /* AIFormDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC474C482DB85F12000C752B /* AIFormDataRepository.swift */; };
 		BC474C4B2DB8616E000C752B /* ChatCompletionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC474C4A2DB8616E000C752B /* ChatCompletionData.swift */; };
+		BC85D7D02E01DAA0008F46AD /* loading_animation.mov in Resources */ = {isa = PBXBuildFile; fileRef = BC85D7CF2E01DAA0008F46AD /* loading_animation.mov */; };
 		BCA39EC42DC7D80600B2BDE2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = BCA39EC32DC7D80600B2BDE2 /* .gitignore */; };
 		BCAF85E52DB3E84B00A4E18F /* OnThisDayFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF85E42DB3E84B00A4E18F /* OnThisDayFormView.swift */; };
 		BCAF85E82DB3EFEA00A4E18F /* OnThisDayRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF85E72DB3EFEA00A4E18F /* OnThisDayRepository.swift */; };
@@ -72,6 +73,7 @@
 		BC474C4A2DB8616E000C752B /* ChatCompletionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCompletionData.swift; sourceTree = "<group>"; };
 		BC474C542DB88BD1000C752B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BC6078CD2DB327D000F81BB0 /* ProjectStructure.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ProjectStructure.md; sourceTree = "<group>"; };
+		BC85D7CF2E01DAA0008F46AD /* loading_animation.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = loading_animation.mov; sourceTree = "<group>"; };
 		BCA39EC32DC7D80600B2BDE2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		BCAF85E42DB3E84B00A4E18F /* OnThisDayFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnThisDayFormView.swift; sourceTree = "<group>"; };
 		BCAF85E72DB3EFEA00A4E18F /* OnThisDayRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnThisDayRepository.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		BC133B432DAD87A900D1A287 = {
 			isa = PBXGroup;
 			children = (
+				BC85D7CF2E01DAA0008F46AD /* loading_animation.mov */,
 				BCA39EC32DC7D80600B2BDE2 /* .gitignore */,
 				BCC3B4162DC1412800686261 /* ApexFont.ttf */,
 				BC133B4E2DAD87A900D1A287 /* BeneathTheSurface */,
@@ -341,6 +344,7 @@
 			files = (
 				BCA39EC42DC7D80600B2BDE2 /* .gitignore in Resources */,
 				BC1F5C702DB15FBB0096858F /* sample_onthisday.json in Resources */,
+				BC85D7D02E01DAA0008F46AD /* loading_animation.mov in Resources */,
 				BC133B572DAD87AB00D1A287 /* Preview Assets.xcassets in Resources */,
 				BCC3B4172DC1412800686261 /* ApexFont.ttf in Resources */,
 				BC133B542DAD87AB00D1A287 /* Assets.xcassets in Resources */,
