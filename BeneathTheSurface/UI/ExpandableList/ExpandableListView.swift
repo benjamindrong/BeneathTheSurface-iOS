@@ -100,10 +100,13 @@ struct VideoLoadingIndicator: View {
     @State private var hasPlayedOnce: Bool = false
     @State private var shouldStopAfterFirstLoop: Bool = false
     @State private var observerToken: NSObjectProtocol?
+    @State private var timeObserverToken: Any?
 
     var dataFinishedLoading: Bool {
         !isLoading && aiFinished && itemsLoaded
     }
+    
+    
 
     var body: some View {
         VStack {
@@ -136,6 +139,7 @@ struct VideoLoadingIndicator: View {
     }
 
     private func setupPlayerIfNeeded() {
+        
         guard player == nil else { return }
 
         if let url = Bundle.main.url(forResource: "loading_animation", withExtension: "mov") {
@@ -143,6 +147,18 @@ struct VideoLoadingIndicator: View {
             let avPlayer = AVPlayer(playerItem: item)
             avPlayer.actionAtItemEnd = .pause
             player = avPlayer
+            
+            // Observe playback progress
+            let interval = CMTime(seconds: 0.1, preferredTimescale: CMTimeScale(NSEC_PER_SEC))
+            timeObserverToken = avPlayer.addPeriodicTimeObserver(forInterval: interval, queue: .main) { time in
+                let seconds = CMTimeGetSeconds(time)
+                
+                // Change speed after 2 seconds (adjust as needed)
+                if seconds >= 1 && avPlayer.rate < 2.0 {
+                    avPlayer.rate = 2
+                }
+            }
+
 
             observerToken = NotificationCenter.default.addObserver(
                 forName: .AVPlayerItemDidPlayToEndTime,
@@ -198,5 +214,10 @@ struct VideoLoadingIndicator: View {
             NotificationCenter.default.removeObserver(token)
             observerToken = nil
         }
+        if let timeObserver = timeObserverToken {
+            player?.removeTimeObserver(timeObserver)
+            timeObserverToken = nil
+        }
+
     }
 }
