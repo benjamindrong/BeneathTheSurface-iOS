@@ -18,6 +18,8 @@ class ExpandableListViewModel: ObservableObject {
     @Published var aiLoadingComplete: Bool = false
     @Published var onThisDayLoadingComplete: Bool = false
     @Published var videoResetTrigger = UUID()
+    @Published var isDataShowing = false
+    @Published var isVideoDonePlaying = false
 
     private var cancellables = Set<AnyCancellable>()
     private let repository = OnThisDayRepository()
@@ -30,12 +32,12 @@ class ExpandableListViewModel: ObservableObject {
     }
 
     func loadData(month: Int, day: Int) {
-        print("📥 Starting data load")
-        
         // Reset loading state
         isLoading = true
         aiLoadingComplete = false
         onThisDayLoadingComplete = false
+        isDataShowing = false
+        isVideoDonePlaying = false
         videoResetTrigger = UUID()
         items = []
 
@@ -54,7 +56,7 @@ class ExpandableListViewModel: ObservableObject {
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
                 if case .failure(let error) = completion {
-                    print("❌ OnThisDay fetch failed: \(error)")
+                    print("OnThisDay fetch failed: \(error)")
                 }
             }, receiveValue: { [weak self] data in
                 guard let self = self else { return }
@@ -69,7 +71,7 @@ class ExpandableListViewModel: ObservableObject {
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
                 if case .failure(let error) = completion {
-                    print("❌ AI form failed: \(error)")
+                    print("AI form failed: \(error)")
                 }
             }, receiveValue: { [weak self] chatData in
                 guard let self = self else { return }
@@ -83,8 +85,9 @@ class ExpandableListViewModel: ObservableObject {
 
     private func checkIfAllFinished() {
         if aiLoadingComplete && onThisDayLoadingComplete {
-            print("✅ All data finished loading")
+            print("All data finished loading")
             isLoading = false
+            isDataShowing = true
         }
     }
 }

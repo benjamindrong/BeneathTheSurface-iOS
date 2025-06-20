@@ -30,10 +30,11 @@ struct ExpandableListView: View {
                                     aiFinished: viewModel.aiLoadingComplete,
                                     onVideoComplete: {
                                         print("Video done playing")
+                                        viewModel.isVideoDonePlaying = true
                                     },
                                     resetTrigger: viewModel.videoResetTrigger
                                 )
-                    
+                    if viewModel.isDataShowing && viewModel.isVideoDonePlaying {
                     ForEach(viewModel.items) { item in
                         ExpandableCardView(item: item) {
                             viewModel.toggleItem(item)
@@ -42,7 +43,7 @@ struct ExpandableListView: View {
                             viewModel.isShowingFullImage = true
                         }
                         .background(colorTheme.surface)
-                    }
+                    }}
                 }
                 .padding(.horizontal)
             }
