@@ -27,11 +27,12 @@ struct ExpandableListView: View {
                     VideoLoadingIndicator(
                                     isLoading: viewModel.isLoading,
                                     itemsLoaded: !viewModel.items.isEmpty,
-                                    aiFinished: viewModel.aiLoadingComplete
-                                ) {
-                                    // Called after video finishes
-                                    print("Video done playing")
-                                }
+                                    aiFinished: viewModel.aiLoadingComplete,
+                                    onVideoComplete: {
+                                        print("Video done playing")
+                                    },
+                                    resetTrigger: viewModel.videoResetTrigger
+                                )
                     
                     ForEach(viewModel.items) { item in
                         ExpandableCardView(item: item) {
@@ -45,19 +46,6 @@ struct ExpandableListView: View {
                 }
                 .padding(.horizontal)
             }
-
-//            if viewModel.isLoading {
-//                VStack {
-//                    ProgressView("Loading...")
-//                        .progressViewStyle(CircularProgressViewStyle())
-//                        .scaleEffect(2)
-//                        .font(fontTheme.title)
-//                }
-//                .frame(maxWidth: .infinity, maxHeight: .infinity)
-//                .background(Color(.systemBackground).opacity(0.8))
-//                .edgesIgnoringSafeArea(.all)
-//                .position(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height / 2)
-//            }
         }
         .fullScreenCover(isPresented: $viewModel.isShowingFullImage) {
             if let imageUrl = viewModel.selectedImageURL {
@@ -96,21 +84,23 @@ import AVKit
 import SwiftUI
 import AVKit
 
+import SwiftUI
+import AVKit
+
 struct VideoLoadingIndicator: View {
     let isLoading: Bool
     let itemsLoaded: Bool
     let aiFinished: Bool
     let onVideoComplete: () -> Void
+    let resetTrigger: UUID
 
     @State private var player: AVPlayer?
-    @State private var showVideo: Bool = true
-    @State private var loadStarted: Bool = false
-    @State private var hasPlayedAtLeastOnce: Bool = false
-    @State private var shouldHideAfterCurrentLoop: Bool = false
+    @State private var showVideo: Bool = false
+    @State private var hasPlayedOnce: Bool = false
+    @State private var shouldStopAfterFirstLoop: Bool = false
     @State private var observerToken: NSObjectProtocol?
 
-    // MARK: - Logic Flags
-    var hasFinishedLoading: Bool {
+    var dataFinishedLoading: Bool {
         !isLoading && aiFinished && itemsLoaded
     }
 
@@ -119,31 +109,24 @@ struct VideoLoadingIndicator: View {
             if showVideo, let player = player {
                 VideoPlayer(player: player)
                     .frame(height: 200)
-                    .onAppear {
-                        configurePlayer()
-                        if loadStarted {
-                            playVideo()
-                        }
-                    }
             }
         }
         .onAppear {
-            setupPlayer()
+            setupPlayerIfNeeded()
         }
         .onChange(of: isLoading) { newValue in
-            if newValue && !loadStarted {
-                loadStarted = true
-                playVideo()
+            if newValue {
+                showAndPlay()
             }
         }
-        .onChange(of: hasFinishedLoading) { newValue in
-            if newValue {
-                // If video hasn't played once yet, mark to hide after it's done
-                if hasPlayedAtLeastOnce {
-                    stopAndHide()
-                } else {
-                    shouldHideAfterCurrentLoop = true
-                }
+        .onChange(of: resetTrigger) { _ in
+            resetState()
+        }
+        .onChange(of: dataFinishedLoading) { finished in
+            if finished && hasPlayedOnce {
+                stopAndHide()
+            } else if finished {
+                shouldStopAfterFirstLoop = true
             }
         }
         .onDisappear {
@@ -151,8 +134,7 @@ struct VideoLoadingIndicator: View {
         }
     }
 
-    // MARK: - Setup
-    private func setupPlayer() {
+    private func setupPlayerIfNeeded() {
         guard player == nil else { return }
 
         if let url = Bundle.main.url(forResource: "loading_animation", withExtension: "mov") {
@@ -166,41 +148,48 @@ struct VideoLoadingIndicator: View {
                 object: item,
                 queue: .main
             ) { _ in
-                hasPlayedAtLeastOnce = true
-
-                if shouldHideAfterCurrentLoop || hasFinishedLoading {
-                    stopAndHide()
-                } else {
-                    avPlayer.seek(to: .zero)
-                    avPlayer.playImmediately(atRate: 1.0)
-                }
+                handlePlaybackFinished()
             }
 
-            // Show the paused video on initial load
             avPlayer.seek(to: .zero)
             avPlayer.pause()
         }
     }
 
-    private func configurePlayer() {
-        guard let player = player else { return }
+    private func showAndPlay() {
+        showVideo = true
+        hasPlayedOnce = false
+        shouldStopAfterFirstLoop = false
 
-        if !loadStarted {
-            player.seek(to: .zero)
-            player.pause()
-        }
-    }
-
-    private func playVideo() {
         guard let player = player else { return }
         player.seek(to: .zero)
         player.playImmediately(atRate: 1.0)
+    }
+
+    private func handlePlaybackFinished() {
+        hasPlayedOnce = true
+
+        if dataFinishedLoading || shouldStopAfterFirstLoop {
+            stopAndHide()
+        } else {
+            player?.seek(to: .zero)
+            player?.playImmediately(atRate: 1.0)
+        }
     }
 
     private func stopAndHide() {
         player?.pause()
         showVideo = false
         onVideoComplete()
+    }
+
+    private func resetState() {
+        player?.seek(to: .zero)
+        player?.pause()
+        hasPlayedOnce = false
+        shouldStopAfterFirstLoop = false
+        showVideo = true
+        player?.playImmediately(atRate: 1.0)
     }
 
     private func cleanupObserver() {
@@ -210,5 +199,3 @@ struct VideoLoadingIndicator: View {
         }
     }
 }
-
-
