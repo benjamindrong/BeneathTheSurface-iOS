@@ -16,6 +16,7 @@ class ExpandableListViewModel: ObservableObject {
     @Published var aiFormError: String?
     @Published var isLoading: Bool = false
     @Published var aiLoadingComplete: Bool = false
+    @Published var onThisDayLoadingComplete: Bool = false
 
 
     private var cancellables = Set<AnyCancellable>()
@@ -51,20 +52,26 @@ class ExpandableListViewModel: ObservableObject {
                }, receiveValue: { [weak self] data in
                    DispatchQueue.main.async {
                        self?.items = data.toExpandableItems()
-                       self?.isLoading = false
+                       if ((self?.aiLoadingComplete) != nil) {
+                           self?.isLoading = false
+                       }
                    }
                })
                .store(in: &cancellables)
 
            aiFormPublisher
                .sink(receiveCompletion: { [weak self] completion in
-                   DispatchQueue.main.async {
-                       self?.aiLoadingComplete = true
-                   }
+//                   DispatchQueue.main.async {
+//                       self?.aiLoadingComplete = true
+//                   }
                }, receiveValue: { [weak self] chatData in
                    DispatchQueue.main.async {
                        self?.items.insert(chatData.toExpandableItem(), at: 0)
                        self?.aiFormSuccess = true
+                       self?.aiLoadingComplete = true
+                       if ((self?.onThisDayLoadingComplete) != nil) {
+                           self?.isLoading = false
+                       }
                    }
                })
                .store(in: &cancellables)
