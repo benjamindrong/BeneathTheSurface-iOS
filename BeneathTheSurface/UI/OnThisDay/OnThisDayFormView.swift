@@ -37,9 +37,8 @@ struct OnThisDayFormView: View {
             .cornerRadius(12)
 
 
-            // Compute fallback values before the Picker
-            let fallbackMonth = selectedMonth == 0 ? 1 : selectedMonth
-            let fallbackYear = selectedYear == 0 ? Calendar.current.component(.year, from: Date()) : selectedYear
+            // Reactive computation inside body
+            let days = daysInMonth(for: selectedMonth == 0 ? 1 : selectedMonth)
 
             // Day Picker
             Picker(
@@ -47,16 +46,18 @@ struct OnThisDayFormView: View {
                 label: Text(selectedDay == 0 ? "DAY" : "\(selectedDay)")
                     .foregroundColor(selectedDay == 0 ? .gray : .primary)
             ) {
-                Text("DAY").tag(0) // Placeholder tag
-                ForEach(1...daysInMonth(for: fallbackMonth), id: \.self) { day in
+                Text("DAY").tag(0)
+                ForEach(1...days, id: \.self) { day in
                     Text("\(day)").tag(day)
                 }
             }
+            .id("dayPicker-\(selectedMonth)") // 👈 This forces the Picker to reset when month changes
             .pickerStyle(.menu)
             .padding()
             .frame(maxWidth: .infinity)
             .background(Color(red: 0.94, green: 0.92, blue: 0.96))
             .cornerRadius(12)
+
 
 
 
@@ -125,7 +126,7 @@ struct OnThisDayFormView: View {
         }
 
         errorMessage = nil
-        onSubmit(selectedDay, selectedMonth, selectedYear)
+        onSubmit(selectedDay, selectedMonth, selectedYear) // after data received, day picker doesnt expand
     }
 }
 

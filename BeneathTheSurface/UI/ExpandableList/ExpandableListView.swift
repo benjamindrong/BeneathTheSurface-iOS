@@ -18,34 +18,42 @@ struct ExpandableListView: View {
     var body: some View {
         ZStack {
             colorTheme.background.ignoresSafeArea()
-            ScrollView {
-                VStack(spacing: 12) {
-                    OnThisDayFormView { day, month, year in
-                        viewModel.loadData(month: month, day: day)
-                    }
-                    
-                    VideoLoadingIndicator(
-                                    isLoading: viewModel.isLoading,
-                                    itemsLoaded: !viewModel.items.isEmpty,
-                                    aiFinished: viewModel.aiLoadingComplete,
-                                    onVideoComplete: {
-                                        print("Video done playing")
-                                        viewModel.isVideoDonePlaying = true
-                                    },
-                                    resetTrigger: viewModel.videoResetTrigger
-                                )
-                    if viewModel.isDataShowing && viewModel.isVideoDonePlaying {
-                    ForEach(viewModel.items) { item in
-                        ExpandableCardView(item: item) {
-                            viewModel.toggleItem(item)
-                        } onImageTapped: { url in
-                            viewModel.selectedImageURL = url
-                            viewModel.isShowingFullImage = true
-                        }
-                        .background(colorTheme.surface)
-                    }}
+            
+            VStack(spacing: 0) {
+                // ✅ Move form OUT of scroll view
+                OnThisDayFormView { day, month, year in
+                    viewModel.loadData(month: month, day: day)
                 }
-                .padding(.horizontal)
+                .background(colorTheme.surface)
+                .padding(.bottom, 8)
+
+                // 🔁 Scrollable results + loading state
+                ScrollView {
+                    VStack(spacing: 12) {
+                        VideoLoadingIndicator(
+                            isLoading: viewModel.isLoading,
+                            itemsLoaded: !viewModel.items.isEmpty,
+                            aiFinished: viewModel.aiLoadingComplete,
+                            onVideoComplete: {
+                                viewModel.isVideoDonePlaying = true
+                            },
+                            resetTrigger: viewModel.videoResetTrigger
+                        )
+
+                        if viewModel.isDataShowing && viewModel.isVideoDonePlaying {
+                            ForEach(viewModel.items) { item in
+                                ExpandableCardView(item: item) {
+                                    viewModel.toggleItem(item)
+                                } onImageTapped: { url in
+                                    viewModel.selectedImageURL = url
+                                    viewModel.isShowingFullImage = true
+                                }
+                                .background(colorTheme.surface)
+                            }
+                        }
+                    }
+                    .padding(.horizontal)
+                }
             }
         }
         .fullScreenCover(isPresented: $viewModel.isShowingFullImage) {
@@ -56,6 +64,7 @@ struct ExpandableListView: View {
             }
         }
     }
+
 }
 
 struct VideoPlaceholderView: View {
