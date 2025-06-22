@@ -55,6 +55,7 @@ struct ExpandableCardView: View {
                                     if let extract = page.extract {
                                         Text(extract)
                                             .font(fontTheme.body)
+                                            .fontWeight(.regular)
                                             .foregroundColor(fontTheme.textColor)
                                     }
 
