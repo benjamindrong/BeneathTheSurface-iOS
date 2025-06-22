@@ -46,6 +46,7 @@ struct ExpandableCardView: View {
                         onToggle()
                     }
                 }
+                .padding(15)
                 
                 if item.isExpanded {
                     VStack(alignment: .leading, spacing: 8) {
@@ -57,6 +58,7 @@ struct ExpandableCardView: View {
                                     .font(fontTheme.body)
                                     .fontWeight(.regular)
                                     .foregroundColor(fontTheme.textColor)
+                                    .androidTextStyle()
                             }
                             
                             if let imageUrl = page.thumbnail?.source, let url = URL(string: imageUrl) {
@@ -129,3 +131,21 @@ struct ExpandableCardView: View {
         
     }
 }
+struct AndroidTextStyle: ViewModifier {
+    var lineSpacing: CGFloat = 6
+    var kerning: CGFloat = 0.4
+
+    func body(content: Content) -> some View {
+        content
+            .kerning(kerning)
+            .lineSpacing(lineSpacing)
+    }
+}
+
+extension View {
+    func androidTextStyle(lineSpacing: CGFloat = 4, kerning: CGFloat = 0.4) -> some View {
+        self.modifier(AndroidTextStyle(lineSpacing: lineSpacing, kerning: kerning))
+    }
+}
+
+

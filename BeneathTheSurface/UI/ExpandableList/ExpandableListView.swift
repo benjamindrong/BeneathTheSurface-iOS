@@ -49,10 +49,11 @@ struct ExpandableListView: View {
                                     viewModel.isShowingFullImage = true
                                 }
                                 .background(colorTheme.surface)
+                                .cornerRadius(10)
                             }
                         }
                     }
-                    .padding(.horizontal)
+//                    .padding(.horizontal)
                 }
             }
         }
