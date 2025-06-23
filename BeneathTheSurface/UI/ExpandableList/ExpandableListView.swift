@@ -20,14 +20,12 @@ struct ExpandableListView: View {
             colorTheme.background.ignoresSafeArea()
             
             VStack(spacing: 0) {
-                // ✅ Move form OUT of scroll view
                 OnThisDayFormView { day, month, year in
                     viewModel.loadData(month: month, day: day)
                 }
                 .background(colorTheme.surface)
                 .padding(.bottom, 8)
 
-                // 🔁 Scrollable results + loading state
                 ScrollView {
                     VStack(spacing: 12) {
                         VideoLoadingIndicator(
@@ -85,7 +83,7 @@ struct VideoPlaceholderView: View {
                     }
                 }
             }
-            .frame(height: 200)
+//            .frame(height: 200)
     }
 }
 
@@ -116,15 +114,24 @@ struct VideoLoadingIndicator: View {
         !isLoading && aiFinished && itemsLoaded
     }
     
-    
-
     var body: some View {
-        VStack {
-            if showVideo, let player = player {
-                VideoPlayer(player: player)
-                    .frame(height: 200)
+        
+        GeometryReader { geometry in
+            VStack {
+                if showVideo, let player = player {
+                    let width = geometry.size.width - 32 // Add some horizontal margin
+                    let aspectRatio: CGFloat = 900 / 720
+                    let height = width * aspectRatio
+
+                    ScaledVideoPlayer(player: player)
+                        .frame(width: width, height: height)
+                        .clipped()
+                        .cornerRadius(12) // Optional, for clean edges
+                        .padding(.horizontal, 16) // Ensures it doesn’t touch screen edges
+                }
             }
         }
+
         .onAppear {
             setupPlayerIfNeeded()
         }
@@ -229,5 +236,24 @@ struct VideoLoadingIndicator: View {
             timeObserverToken = nil
         }
 
+    }
+}
+
+import SwiftUI
+import AVKit
+
+struct ScaledVideoPlayer: UIViewControllerRepresentable {
+    let player: AVPlayer
+
+    func makeUIViewController(context: Context) -> AVPlayerViewController {
+        let controller = AVPlayerViewController()
+        controller.player = player
+        controller.showsPlaybackControls = false
+        controller.videoGravity = .resizeAspectFill // This removes black bars
+        return controller
+    }
+
+    func updateUIViewController(_ uiViewController: AVPlayerViewController, context: Context) {
+        uiViewController.player = player
     }
 }
