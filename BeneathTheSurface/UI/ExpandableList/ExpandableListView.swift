@@ -187,6 +187,7 @@ struct VideoLoadingIndicator: View {
 
             avPlayer.seek(to: .zero)
             avPlayer.pause()
+            showVideo = true
         }
     }
 
