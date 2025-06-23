@@ -10,7 +10,7 @@ import Combine
 
 class AIFormDataRepository {
     func sendFormData(_ data: AIFormData) -> AnyPublisher<ChatCompletionData, Error> {
-        guard let url = URL(string: "http://databridge.apexcoretechs.com:3003/aiFormData") else {
+        guard let url = URL(string: "https://databridge.apexcoretechs.com/aiFormData") else {
             return Fail(error: URLError(.badURL)).eraseToAnyPublisher()
         }
 

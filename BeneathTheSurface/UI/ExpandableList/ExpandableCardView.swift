@@ -13,81 +13,139 @@ struct ExpandableCardView: View {
     var onImageTapped: (URL) -> Void
     @State private var selectedPage = 0
     @State private var isShowingFullImage = false
-
+    
+    @Environment(\.fontTheme) var fontTheme
+    
     var body: some View {
-        VStack(alignment: .leading) {
-            HStack {
-                Text(item.title)
-                    .font(.headline)
-                Spacer()
-                Image(systemName: "chevron.down")
-                    .rotationEffect(.degrees(item.isExpanded ? 180 : 0))
-                    .animation(.easeInOut(duration: 0.25), value: item.isExpanded)
+        ZStack {
+            // Dynamically sized background overlay
+            GeometryReader { geometry in
+                Image("result_overlay")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: geometry.size.width, height: geometry.size.height)
+                    .opacity(0.25)
+                    .clipped()
+                    .cornerRadius(10)
             }
-            .contentShape(Rectangle())
-            .onTapGesture {
-                withAnimation {
-                    onToggle()
+            
+            // Content sits on top of overlay
+            VStack(alignment: .leading) {
+                HStack {
+                    Text(item.title)
+                        .font(fontTheme.title)
+                        .foregroundColor(fontTheme.textColor)
+                    Spacer()
+                    Image(systemName: "chevron.down")
+                        .rotationEffect(.degrees(item.isExpanded ? 180 : 0))
+                        .animation(.easeInOut(duration: 0.25), value: item.isExpanded)
                 }
-            }
-
-            if item.isExpanded {
-                TabView(selection: $selectedPage) {
-                    ForEach(Array((item.pages?.enumerated())!), id: \.element.pageID) { index, page in
-                        ScrollView {
-                            VStack(alignment: .leading, spacing: 8) {
-                                if let extract = page.extract {
-                                    Text(extract)
-                                        .font(.subheadline)
-                                        .foregroundColor(.secondary)
-                                }
-
-                                if let imageUrl = page.thumbnail?.source, let url = URL(string: imageUrl) {
-                                    AsyncImage(url: url) { phase in
-                                        switch phase {
-                                        case .empty:
-                                            ProgressView()
-                                        case .success(let image):
-                                            image
-                                                .resizable()
-                                                .aspectRatio(contentMode: .fit)
-                                                .cornerRadius(10)
-                                                .onTapGesture {
-                                                    if let original = page.originalImage?.source,
-                                                           let url = URL(string: original) {
-                                                            onImageTapped(url)
-                                                        }
-                                                }
-                                        case .failure:
-                                            Image(systemName: "photo")
-                                        @unknown default:
-                                            EmptyView()
-                                        }
-                                    }
-                                    .frame(height: 150)
-                                }
-                            }
-                            .padding()
-                        }
-                        .tag(index)
+                .contentShape(Rectangle())
+                .onTapGesture {
+                    withAnimation {
+                        onToggle()
                     }
                 }
-                .tabViewStyle(.page(indexDisplayMode: .never))
-                .frame(height: 300)
-
-                // Page indicator
-                HStack {
-                    Spacer()
-                    Text("\(selectedPage + 1) of \(item.pages?.count ?? 1)")
-                        .font(.caption)
-                        .foregroundColor(.gray)
-                    Spacer()
+                .padding(15)
+                
+                if item.isExpanded {
+                    VStack(alignment: .leading, spacing: 8) {
+                        if let pages = item.pages {
+                            let page = pages[selectedPage]
+                            
+                            if let extract = page.extract {
+                                Text(extract)
+                                    .font(fontTheme.body)
+                                    .fontWeight(.regular)
+                                    .foregroundColor(fontTheme.textColor)
+                                    .androidTextStyle()
+                            }
+                            
+                            if let imageUrl = page.thumbnail?.source, let url = URL(string: imageUrl) {
+                                AsyncImage(url: url) { phase in
+                                    switch phase {
+                                    case .empty:
+                                        ProgressView()
+                                    case .success(let image):
+                                        image
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .cornerRadius(10)
+                                            .onTapGesture {
+                                                if let original = page.originalImage?.source,
+                                                   let url = URL(string: original) {
+                                                    onImageTapped(url)
+                                                }
+                                            }
+                                    case .failure:
+                                        Image(systemName: "photo")
+                                    @unknown default:
+                                        EmptyView()
+                                    }
+                                }
+                                .frame(height: 150)
+                            }
+                            
+                            // Page indicator + navigation
+                            if pages.count > 1 {
+                                HStack {
+                                    Button(action: {
+                                        if selectedPage > 0 {
+                                            selectedPage -= 1
+                                        }
+                                    }) {
+                                        Image(systemName: "chevron.left")
+                                            .foregroundColor(selectedPage > 0 ? .primary : .gray)
+                                    }
+                                    .disabled(selectedPage == 0)
+                                    
+                                    Spacer()
+                                    
+                                    Text("\(selectedPage + 1) of \(pages.count)")
+                                        .font(fontTheme.caption)
+                                        .foregroundColor(fontTheme.textColor)
+                                    
+                                    Spacer()
+                                    
+                                    Button(action: {
+                                        if selectedPage < pages.count - 1 {
+                                            selectedPage += 1
+                                        }
+                                    }) {
+                                        Image(systemName: "chevron.right")
+                                            .foregroundColor(selectedPage < pages.count - 1 ? .primary : .gray)
+                                    }
+                                    .disabled(selectedPage == pages.count - 1)
+                                }
+                                .padding(.top, 4)
+                            }
+                        }
+                    }
+                    .padding()
                 }
             }
+            .background(Color.clear)
+            .cornerRadius(10)
+            .shadow(radius: 2)
         }
-        .padding()
-        .background(Color(.secondarySystemBackground))
-        .cornerRadius(10)
-        .shadow(radius: 2)
+        
     }
 }
+struct AndroidTextStyle: ViewModifier {
+    var lineSpacing: CGFloat = 6
+    var kerning: CGFloat = 0.4
+
+    func body(content: Content) -> some View {
+        content
+            .kerning(kerning)
+            .lineSpacing(lineSpacing)
+    }
+}
+
+extension View {
+    func androidTextStyle(lineSpacing: CGFloat = 4, kerning: CGFloat = 0.4) -> some View {
+        self.modifier(AndroidTextStyle(lineSpacing: lineSpacing, kerning: kerning))
+    }
+}
+
+

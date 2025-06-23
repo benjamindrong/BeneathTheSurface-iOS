@@ -1,81 +1,132 @@
-//
-//  OnThisDayFormView.swift
-//  BeneathTheSurface
-//
-//  Created by Benjamin Drong on 4/19/25.
-//
-
 import SwiftUI
+import _AVKit_SwiftUI
+import AVFoundation
 
 struct OnThisDayFormView: View {
-    @State private var selectedMonth: Int?
-    @State private var selectedDay: Int?
+    @State private var selectedMonth: Int = 0
+    @State private var selectedDay: Int = 0
     @State private var errorMessage: String?
+    
 
-    let onSubmit: (_ day: Int, _ month: Int) -> Void
+    let onSubmit: (_ day: Int, _ month: Int, _ year: Int) -> Void
+
+    @Environment(\.fontTheme) var fontTheme
+    @Environment(\.colorScheme) var systemColorScheme
+
+    private var selectedYear: Int {
+        Calendar.current.component(.year, from: Date())
+    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
             // Month Picker
-            Picker("Month", selection: Binding(
-                get: { selectedMonth ?? 1 },
-                set: { selectedMonth = $0 }
-            )) {
+            Picker(
+                selection: $selectedMonth,
+                label: Text(selectedMonth == 0 ? "MONTH" : Calendar.current.monthSymbols[selectedMonth - 1])
+                    .foregroundColor(selectedMonth == 0 ? .gray : .primary)
+            ) {
+                Text("MONTH").tag(0) // Placeholder tag
                 ForEach(1...12, id: \.self) { month in
-                    Text(String(format: "%02d", month)).tag(month)
+                    Text(Calendar.current.monthSymbols[month - 1]).tag(month)
                 }
             }
             .pickerStyle(.menu)
-            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding()
+            .frame(maxWidth: .infinity)
+            .background(Color(red: 0.94, green: 0.92, blue: 0.96)) // Light purple-grey
+            .cornerRadius(12)
+
+
+            // Reactive computation inside body
+            let days = daysInMonth(for: selectedMonth == 0 ? 1 : selectedMonth)
 
             // Day Picker
-            Picker("Day", selection: Binding(
-                get: { selectedDay ?? 1 },
-                set: { selectedDay = $0 }
-            )) {
-                ForEach(1...31, id: \.self) { day in
-                    Text(String(format: "%02d", day)).tag(day)
+            Picker(
+                selection: $selectedDay,
+                label: Text(selectedDay == 0 ? "DAY" : "\(selectedDay)")
+                    .foregroundColor(selectedDay == 0 ? .gray : .primary)
+            ) {
+                Text("DAY").tag(0)
+                ForEach(1...days, id: \.self) { day in
+                    Text("\(day)").tag(day)
                 }
             }
+            .id("dayPicker-\(selectedMonth)") // 👈 This forces the Picker to reset when month changes
             .pickerStyle(.menu)
-            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding()
+            .frame(maxWidth: .infinity)
+            .background(Color(red: 0.94, green: 0.92, blue: 0.96))
+            .cornerRadius(12)
+
+
+
+
 
             // Error message
             if let error = errorMessage {
                 Text(error)
                     .foregroundColor(.red)
-                    .font(.caption)
+                    .font(fontTheme.caption)
             }
 
-            // Submit Button
+            // Buttons
             HStack {
-                Spacer()
+                Button("Today") {
+                    setToCurrentDate()
+                }
+                .font(fontTheme.title)
+                .padding(.horizontal, 20)
+                .padding(.vertical, 10)
+                .background(Color(red: 0.0, green: 0.29, blue: 0.71)) // Royal blue
+                .foregroundColor(.white)
+                .cornerRadius(20)
+
                 Button("Get History") {
                     validateAndSubmit()
                 }
-                .buttonStyle(.borderedProminent)
+                .font(fontTheme.title)
+                .padding(.horizontal, 20)
+                .padding(.vertical, 10)
+                .background(Color(red: 0.0, green: 0.29, blue: 0.71)) // Royal blue
+                .foregroundColor(.white)
+                .cornerRadius(20)
+
             }
         }
         .padding()
     }
 
+    private func setToCurrentDate() {
+        let currentDate = Date()
+        let calendar = Calendar.current
+
+        selectedMonth = calendar.component(.month, from: currentDate)
+        selectedDay = calendar.component(.day, from: currentDate)
+    }
+
+    private func daysInMonth(for month: Int) -> Int {
+        let calendar = Calendar.current
+        let dateComponents = DateComponents(year: selectedYear, month: month)
+        if let date = calendar.date(from: dateComponents),
+           let range = calendar.range(of: .day, in: .month, for: date) {
+            return range.count
+        }
+        return 31
+    }
+
     private func validateAndSubmit() {
-        guard let month = selectedMonth, let day = selectedDay else {
-            errorMessage = "Both fields are required."
+        guard selectedMonth != 0 else {
+            errorMessage = "Please select a month."
             return
         }
 
-        guard (1...12).contains(month) else {
-            errorMessage = "Month must be between 1 and 12."
-            return
-        }
-
-        guard (1...31).contains(day) else {
-            errorMessage = "Day must be between 1 and 31."
+        guard selectedDay != 0 else {
+            errorMessage = "Please select a day."
             return
         }
 
         errorMessage = nil
-        onSubmit(day, month)
+        onSubmit(selectedDay, selectedMonth, selectedYear) // after data received, day picker doesnt expand
     }
 }
+
